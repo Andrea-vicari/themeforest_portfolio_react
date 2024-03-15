@@ -10,7 +10,7 @@ Full Features
 OnePage Version
 MultiPage Version
 Bootstrap 5 CSS Framework
-Created using Vie ('npm create vite@latest')
+Created using Vite.js ('npm create vite@latest')
 API friendly: It is possible to fetch datas from an external API changing the URL in a line of code
 Reusable Functional Components
 Fully Responsive to all devices

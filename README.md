@@ -1,4 +1,4 @@
-# React Porftolio Theme for ThemeForest
+## React Porftolio Theme for ThemeForest
 
 Repository for the React Portfolio – Personal Portfolio React.JS Template, can be used for many purposes.\
 Elegant, minimal and clean design.\
@@ -7,7 +7,7 @@ Projects datas from a local JSON to speed up development and reduce code (data i
 It’s suitable for many types of business and projetcs.\
 It’s 100% responsive and Ultra Super Fast.\
 
-## Full Features
+### Full Features
 * OnePage Version
 * MultiPage Version
 * Bootstrap 5 CSS Framework

@@ -1,7 +1,7 @@
 React Portfolio – Personal Portfolio React.JS Template, can be used for many purposes.
 Elegant, minimal and clean design.
-It’s suitable for  professional projects and services in digital way.
-It’s 100% responsive and Ultra Super Fast
+It’s suitable for many types of business and projetcs.
+It’s 100% responsive and Ultra Super Fast.
 
 Full Features
 =============

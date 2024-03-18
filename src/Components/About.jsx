@@ -23,7 +23,7 @@ function About() {
                 </div>
               </div>
               <div className="about-icon col d-flex align-items-start">
-                <i className='fab fa-bootstrap text-bg-primary bg-primary p-2 mx-3'></i>
+                <i className='fab fa-css3 text-bg-primary bg-primary p-2 mx-3'></i>
                 <div>
                   <h3 className="fw-bold mb-0 fs-4">Bootstrap5</h3>
                   <p>Coded using Bootstrap5 framwork, to speed up future developments</p>
@@ -31,7 +31,7 @@ function About() {
               </div>
 
               <div className="about-icon col d-flex align-items-start">
-                <i className='fa fa-pen text-bg-primary bg-primary p-2 mx-3'></i>
+                <i className='fa fa-palette text-bg-primary bg-primary p-2 mx-3'></i>
                 <div>
                   <h3 className="fw-bold mb-0 fs-4">Clean</h3>
                   <p>Clean and elegant design suitable for many projects and business</p>

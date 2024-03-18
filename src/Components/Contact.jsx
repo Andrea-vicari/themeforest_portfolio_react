@@ -1,6 +1,26 @@
 import React from 'react'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+	const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_krggjnj', 'template_g56sqe5', form.current, {
+        publicKey: 'xiQcRPgg-RfCqkF7p',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <React.Fragment>
         <section id="contact" className="bg-body-secondary pt-5 pb-5">
@@ -45,43 +65,15 @@ function Contact() {
 
 
 
-					<form id="contact-form" className="col-sm-6 col-sm-offset-3 mx-auto">
-
-						<div className="form-group">
-						  <label className="control-label" htmlFor="contact-name">Name</label>
-						  <div className="controls">
-							<input id="contact-name" name="contactName" placeholder="Your name" className="form-control requiredField label_better" type="text" data-error-empty="Please enter your name"/>
-							<i className="fa fa-user text-primary"></i>
-						  </div>
-						</div>
-
-						<div className="form-group">
-						  <label className="control-label" htmlFor="contact-mail">Email</label>
-						  <div className=" controls">
-							<input id="contact-mail" name="email" placeholder="Your email" className="form-control requiredField label_better" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address"/>
-							<i className="fa fa-envelope text-primary"></i>
-						  </div>
-						</div>
-
-						<div className="form-group">
-						  <label className="control-label" htmlFor="contact-message">Message</label>
-							<div className="controls">
-								<textarea id="contact-message" name="comments"  placeholder="Your message" className="form-control requiredField label_better" rows="6" data-error-empty="Please enter your message"></textarea>
-								<i className="fa fa-comment text-primary"></i>
-							</div>
-						</div>
-						<div className="d-grid">
-
-  							<button className="btn btn-outline-primary mt-5 p-2" type="button">
-							  <i className="fa fa-location-arrow text-primary mx-3"></i>
-								Send</button>
-
-						</div>
-
-						<input type="hidden" name="submitted" id="submitted" value="true" />
-
-					</form>
-
+				<form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
 				</div>
 
 			</div>

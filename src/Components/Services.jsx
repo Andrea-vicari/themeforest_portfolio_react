@@ -11,46 +11,40 @@ function Services() {
             <p className="section-description">We create awesome Websites and Mobile Apps, the perfect solution for your project.We don't make designs, we make magic!</p>
 
             <div className="row services">
+                <div className="col-sm-3 item text-center scrollimation fade-right d2">
+                <div className="icon"><i className="fa fa-flag"></i></div>
+                <h3>Branding</h3>
+                <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
+                </div>
+                <div className="col-sm-3 item text-center scrollimation fade-right">
 
-                <div className="col-sm-3 item text-center">
-
-                    <div className="icon mb-3"><i className="fa fa-flag fs-1"></i></div>
-                    <h3>Branding</h3>
-                    <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
+                <div className="icon"><i className="fa fa-pen"></i></div>
+                <h3>Design</h3>
+                <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 
                 </div>
+                <div className="col-sm-3 item text-center scrollimation fade-left">
 
-                <div className="col-sm-3 item text-center">
-
-                    <div className="icon mb-3"><i className="fa fa-cogs fs-1"></i></div>
-                    <h3>Design</h3>
-                    <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
-
-                </div>
-
-                <div className="col-sm-3 item text-center">
-
-                    <div className="icon mb-3"><i className="fa fa-code fs-1"></i></div>
-                    <h3>Development</h3>
-                    <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
-
-                </div>
-
-                <div className="col-sm-3 item text-center">
-
-                    <div className="icon mb-3"><i className="fa fa-rocket fs-1"></i></div>
-                    <h3>Rocket Science</h3>
-                    <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
-
-                </div>
+                <div className="icon"><i className="fa fa-code"></i></div>
+                <h3>Development</h3>
+                <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 
             </div>
 
 
+
+
+<div className="col-sm-3 item text-center scrollimation fade-left d2">
+<div className="icon"><i className="fa fa-rocket"></i></div>
+<h3>Rocket Science</h3>
+<p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
+</div>
+</div>
+
             <h1 className="subsection-title">Our Process</h1>
             <p className="subsection-description">You are a serious company. You deserve a serious sollution.We'll be there from the beginning to the very end of your project's development.</p>
 
-            <div className="process-box  in">
+            <div className="process-box">
 
                 <ul className="process-list">
                     <li>

@@ -1,7 +1,7 @@
 
 [{
-    "introImage":"./port_img/DrumPad.png",
-    "thumbImage":"./port_img/DrumPad_thumb_land.png",
+    "introImage":"./",
+    "thumbImage":"",
     "type":"portfolio_post",
     "title":"Drum Pad",
     "excerpt":"DrumPad built with React, Node and MongoDB",

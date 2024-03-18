@@ -15,6 +15,7 @@ function Navbar() {
     </button>
     <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div className="offcanvas-header">
+      <img src={reactLogo} className='mx-auto'></img>
         <h5 className="offcanvas-title" id="offcanvasNavbarLabel">React Portfolio</h5>
         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
@@ -35,6 +36,10 @@ function Navbar() {
           <li className="nav-item">
             <a className="nav-link fs-5" href="#pricing">Prices</a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link fs-5" href="#news">News</a>
+          </li>
+
           <li className="nav-item">
             <a className="nav-link fs-5" href="#contact">Contact</a>
           </li>

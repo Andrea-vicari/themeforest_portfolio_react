@@ -14,7 +14,7 @@ function Services() {
 
                 <div className="col-sm-3 item text-center">
 
-                    <div className="icon"><i className="fa fa-flag fs-1"></i></div>
+                    <div className="icon mb-3"><i className="fa fa-flag fs-1"></i></div>
                     <h3>Branding</h3>
                     <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 
@@ -22,7 +22,7 @@ function Services() {
 
                 <div className="col-sm-3 item text-center">
 
-                    <div className="icon"><i className="fa fa-cogs fs-1"></i></div>
+                    <div className="icon mb-3"><i className="fa fa-cogs fs-1"></i></div>
                     <h3>Design</h3>
                     <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 
@@ -30,7 +30,7 @@ function Services() {
 
                 <div className="col-sm-3 item text-center">
 
-                    <div className="icon"><i className="fa fa-code fs-1"></i></div>
+                    <div className="icon mb-3"><i className="fa fa-code fs-1"></i></div>
                     <h3>Development</h3>
                     <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 
@@ -38,7 +38,7 @@ function Services() {
 
                 <div className="col-sm-3 item text-center">
 
-                    <div className="icon"><i className="fa fa-rocket fs-1"></i></div>
+                    <div className="icon mb-3"><i className="fa fa-rocket fs-1"></i></div>
                     <h3>Rocket Science</h3>
                     <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 
@@ -54,23 +54,23 @@ function Services() {
 
                 <ul className="process-list">
                     <li>
-                        <p className="icon"><i className="fa fa-search fa-fw"></i></p>
+                        <p className="icon mb-3"><i className="fa fa-search fa-fw"></i></p>
                         <h4>Research &amp; Analysis</h4>
                     </li>
                     <li>
-                        <p className="icon"><i className="fa fa-pencil fa-fw"></i></p>
+                        <p className="icon mb-3"><i className="fa fa-pen fa-fw"></i></p>
                         <h4>Design</h4>
                     </li>
                     <li>
-                        <p className="icon"><i className="fa fa-code fa-fw"></i></p>
+                        <p className="icon mb-3"><i className="fa fa-code fa-fw"></i></p>
                         <h4>Development</h4>
                     </li>
                     <li>
-                        <p className="icon"><i className="fa fa-cogs fa-fw"></i></p>
+                        <p className="icon mb-3"><i className="fa fa-cogs fa-fw"></i></p>
                         <h4>Testing</h4>
                     </li>
                     <li className="colored">
-                        <p className="icon"><i className="fa fa-globe fa-fw"></i></p>
+                        <p className="icon mb-3"><i className="fa fa-globe fa-fw"></i></p>
                         <h4>Publish</h4>
                     </li>
                 </ul>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Features() {
   return (
     <React.Fragment>
@@ -85,7 +86,7 @@ function Features() {
 
         </div>
 
-    </section>
+        </section>
 
     </React.Fragment>
   )

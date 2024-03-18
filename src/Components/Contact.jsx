@@ -45,33 +45,39 @@ function Contact() {
 
 
 
-					<form id="contact-form" className="col-sm-6 col-sm-offset-3 mx-auto" action="contact.php" method="post" novalidate>
+					<form id="contact-form" className="col-sm-6 col-sm-offset-3 mx-auto">
 
 						<div className="form-group">
-						  <label className="control-label" for="contact-name">Name</label>
+						  <label className="control-label" htmlFor="contact-name">Name</label>
 						  <div className="controls">
 							<input id="contact-name" name="contactName" placeholder="Your name" className="form-control requiredField label_better" type="text" data-error-empty="Please enter your name"/>
-							<i className="fa fa-user"></i>
+							<i className="fa fa-user text-primary"></i>
 						  </div>
 						</div>
 
 						<div className="form-group">
-						  <label className="control-label" for="contact-mail">Email</label>
+						  <label className="control-label" htmlFor="contact-mail">Email</label>
 						  <div className=" controls">
 							<input id="contact-mail" name="email" placeholder="Your email" className="form-control requiredField label_better" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address"/>
-							<i className="fa fa-envelope"></i>
+							<i className="fa fa-envelope text-primary"></i>
 						  </div>
 						</div>
 
 						<div className="form-group">
-						  <label className="control-label" for="contact-message">Message</label>
+						  <label className="control-label" htmlFor="contact-message">Message</label>
 							<div className="controls">
 								<textarea id="contact-message" name="comments"  placeholder="Your message" className="form-control requiredField label_better" rows="6" data-error-empty="Please enter your message"></textarea>
-								<i className="fa fa-comment"></i>
+								<i className="fa fa-comment text-primary"></i>
 							</div>
 						</div>
+						<div className="d-grid">
 
-						<p><button name="submit" type="submit" className="btn btn-qubico btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i className="fa fa-location-arrow"></i>Send Message</button></p>
+  							<button className="btn btn-outline-primary mt-5 p-2" type="button">
+							  <i className="fa fa-location-arrow text-primary mx-3"></i>
+								Send</button>
+
+						</div>
+
 						<input type="hidden" name="submitted" id="submitted" value="true" />
 
 					</form>

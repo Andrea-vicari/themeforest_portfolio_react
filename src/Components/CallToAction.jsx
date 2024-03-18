@@ -5,7 +5,7 @@ import CtaImg from "../Components/images/react_port_cover_cropped.jpg"
 function CallToAction() {
   return (
     <React.Fragment>
-        <section className="bg-primary light-typo padding-top-bottom cta-iphones">
+        <section className="bg-primary light-typo padding-top-bottom call-to-action">
 
         <div className="container">
 
@@ -17,7 +17,7 @@ function CallToAction() {
 
                 <div className="col-sm-5 col-sm-offset-1">
 
-                    <h2>Are You Ready To Enjoy?</h2>
+                    <h1>Call to Action Section</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
                     <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
 

@@ -51,17 +51,15 @@ function Portfolio() {
         showAll()
         }
 
-
+        // array of all css props of portfolios block
         let allBlocks = document.getElementsByClassName('port_block')
 
+        // Loop through all blocks
         for(let i =0; i<allBlocks.length;i++){
             let cazzo = allBlocks[i].classList.value.split(' ')
             console.log(whatClicked)
 
           }
-
-
-
     }
 
   return (

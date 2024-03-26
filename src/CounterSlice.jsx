@@ -15,7 +15,7 @@ export const counterSlice = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
+
 export const { dark, ligth } = counterSlice.actions
 
 export default counterSlice.reducer

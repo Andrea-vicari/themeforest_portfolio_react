@@ -1,5 +1,5 @@
 import React from 'react'
-import reactLogo from "../images/react.svg"
+import reactLogo from "../images/react_colored.svg"
 import SocialMenu from '../Common/SocialMenu';
 import DarkSelector from '../Common/SwitchDark'
 import { useSelector, useDispatch } from 'react-redux'
@@ -15,8 +15,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme={count}>
     <div className="container">
       <a className="navbar-brand" href="#">
-        <img src={reactLogo}></img>
-        React Portfolio</a>
+        <img src={reactLogo}></img> React Portfolio</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

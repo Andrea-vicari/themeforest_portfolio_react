@@ -15,7 +15,7 @@
     height:100%;
     left:1px;
     top:0;
-    border-right:1px solid #5CC9DF;
+    border-right:1px solid #0d6efd;
     z-index:-1;
 }
 
@@ -27,7 +27,7 @@
     height:100px;
     left:1px;
     bottom:-105px;
-    border-right:1px dashed #5CC9DF;
+    border-right:1px dashed #0d6efd;
     z-index:-1;
 }
 
@@ -41,7 +41,7 @@
     font-size:21px;
     font-weight:400;
     color:#fff;
-    background:#5CC9DF;
+    background:#0d6efd;
     border-radius:5px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .news-item:hover .news-content {
-    background:#5CC9DF;
+    background:#0d6efd;
     color:#fff;
 }
 
@@ -102,12 +102,12 @@
 }
 
 .news-item:hover .news-content:after {
-    border-left-color:#5CC9DF;
+    border-left-color:#0d6efd;
 }
 
 .news-item.right:hover .news-content:after {
     border-left-color:transparent;
-    border-right-color:#5CC9DF;
+    border-right-color:#0d6efd;
 }
 
 .news-item .news-content:before {
@@ -118,7 +118,7 @@
     height:20px;
     right:-55px;
     top:60px;
-    background:#5CC9DF;
+    background:#0d6efd;
     border:3px solid #fff;
     border-radius:50%;
     -webkit-transition:background .3s ease-out;
@@ -136,7 +136,7 @@
     height:80px;
     left:10px;
     text-align:center;
-    color:#5CC9DF;
+    color:#0d6efd;
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
 }
@@ -205,7 +205,7 @@
     font-family:'FontAwesome';
     font-size:21px;
     line-height:21px;
-    color:#5CC9DF;
+    color:#0d6efd;
     vertical-align:middle;
     -webkit-transition:padding .3s ease-out;
     transition:padding .3s ease-out;
@@ -258,7 +258,7 @@
     font-size:32px;
     line-height:80px;
     text-align:center;
-    color:#5CC9DF;
+    color:#0d6efd;
     -webkit-transform:scale(0);
     transform:scale(0);
     opacity:0;

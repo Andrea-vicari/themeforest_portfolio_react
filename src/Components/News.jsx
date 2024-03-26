@@ -1,5 +1,6 @@
 import React from 'react'
 import newsList from '../assets/news/news.json';
+import { useSelector} from 'react-redux'
 
 
 function News() {
@@ -12,9 +13,17 @@ function News() {
         }
 
 
+        const themeType = useSelector((state) => state.counter.value)
+
+        let bgType, textType, textColor;
+
+        themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
+        themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
+        themeType == "ligth" ? textColor = "" : textColor = "text-body-secondary"
+
   return (
     <>
-    <section id="news" className="white-bg padding-top-bottom">
+    <section id="news" className={"padding-top-bottom"+ " " + bgType + " " + textType}>
 
     <div className="container">
 
@@ -42,14 +51,14 @@ function News() {
                             <small>{e.Month}</small>
                         </div>
 
-                        <h2 className="news-title">{e.title}</h2>
+                        <h2 className={"news-title" + " " + textColor}>{e.title}</h2>
                             <div className="news-media">
                                 <a className="colorbox cboxElement" href={e.NewsImg}>
                                     <img className="img-responsive" src={e.ThumbImg} alt=""/>
                                 </a>
                             </div>
 
-                        <p>{e.excerpt}</p>
+                        <p className={textColor}>{e.excerpt}</p>
 
                         <a className="read-more" href="#">Read More</a>
 

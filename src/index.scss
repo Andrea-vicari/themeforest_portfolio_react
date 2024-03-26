@@ -235,105 +235,11 @@ font-size: 1.29rem;
 -----Media Queries------
 ------------------------*/
 @media (max-width: 991px) {
-
-    .navbar-header,
-    #main-nav .nav{
-        width:100%;
-        text-align:center;
-    }
-
-    .navbar-brand{
-        float:none;
-    }
+#ligth_dark_button{
+    display: flex;
+    justify-content: center;
 
 }
-
-@media (min-width: 768px){
-
-    /*Submenu*/
-    #main-nav .nav li{
-        position:relative;
-    }
-
-    #main-nav .nav li ul{
-		display:block !important;
-        list-style:none;
-        position:absolute;
-        margin:0;
-        padding:10px 0;
-        top:100%;
-        right:-20px;
-        border-radius:5px;
-        background:#0d6efd;
-        box-shadow:0 0 5px rgba(0,0,0,0.3);
-        opacity:0;
-        -webkit-transform:translateY(20px);
-        transform:translateY(20px);
-        visibility:hidden;
-        -webkit-transition:all .3s ease-out;
-        transition:all .3s ease-out;
-    }
-
-    #main-nav .nav li:hover ul{
-        opacity:1;
-        -webkit-transform:translateY(0);
-        transform:translateY(0);
-        visibility:visible;
-    }
-
-    #main-nav .nav li ul li{
-        margin:0;
-    }
-
-    #main-nav .nav li ul li a,
-    #main-nav .nav li ul li a:hover,
-    #main-nav .nav li ul li a:active,
-    #main-nav .nav li ul li a:focus{
-        display:block;
-        margin:0;
-        padding:7px 20px;
-        width:100%;
-        font-size:16px;
-        line-height:16px;
-        font-weight:400;
-        text-decoration:none;
-        text-transform:none;
-        white-space:nowrap;
-        text-align:center;
-        color:#fff;
-        opacity:.7;
-        -webkit-transition:all .25s ease-out;
-        transition:all .25s ease-out;
-    }
-
-    #main-nav .nav li ul li.active a,
-    #main-nav .nav li ul li a:hover{
-        -webkit-transform:translateY(-3px);
-        transform:translateY(-3px);
-        opacity:1;
-    }
-
-    #main-nav .nav li:hover > a{
-        opacity:1;
-    }
-
-    #main-nav .nav  li:hover a:before{
-        bottom:7px;
-        opacity:1;
-    }
-
-    #main-nav .nav li.submenu > a:before,
-    #main-nav .nav li ul li a:before{
-        display:none;
-    }
-
-    #main-nav .nav li.submenu > a:after{
-        content:'\f0d7';
-        font-family:FontAwesome;
-        margin-left:5px;
-        color:#0d6efd;
-    }
-
 }
 
 @media (max-width: 767px) {
@@ -379,53 +285,6 @@ font-size: 1.29rem;
 
     .section-description{
         font-size:18px;
-    }
-
-
-
-    .navbar-header,
-    #main-nav .nav{
-        width:auto;
-    }
-
-    .navbar-brand{
-        float:left;
-    }
-
-    #main-nav .nav a {
-        text-align:center;
-        border-bottom:1px solid #f5f5f5;
-    }
-
-    #main-nav .nav a:before {
-        display:none;
-    }
-
-    #main-nav .nav li.submenu > a:after{
-        content:'\f0d7';
-        font-family:FontAwesome;
-        margin-left:5px;
-        color:#0d6efd;
-    }
-
-    #main-nav .nav li ul{
-        display:none;
-        list-style:none;
-        padding:0;
-        margin:0;
-    }
-
-    #main-nav .nav li ul li a,
-    #main-nav .nav li ul li a:hover,
-    #main-nav .nav li ul li a:active,
-    #main-nav .nav li ul li a:focus{
-        display:block;
-        margin:0;
-        width:100%;
-        font-weight:400;
-        text-decoration:none;
-        text-transform:none;
-        text-align:center;
     }
 
 

@@ -10,7 +10,7 @@ function CallToAction() {
 
         <div className="container">
 
-            <div className="row">
+            <div className="row d-flex align-items-center">
 
                 <div className="col-sm-6">
                     <img className="img-fluid rounded-4" src={CtaImg} alt=""/>

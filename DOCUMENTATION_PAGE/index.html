@@ -27,7 +27,7 @@
         <li><a class="nav-link" href="#FilesStructures">Files Structures</a></li>
         <li><a class="nav-link" href="#Environment">Environment Setup</a></li>
         <li><a class="nav-link" href="#Deployment">Deployment</a></li>
-        <li><a class="nav-link" href="#PortfolioSection">PortfolioSection</a></li>
+        <li><a class="nav-link" href="#Customization">Customization</a></li>
       </ul>
 
     </nav>
@@ -113,9 +113,13 @@
           <ul>
             <li>bootstrap</li>
             <li>react-bootstrap</li>
+            <li>react-redux</li>
+            <li>@reduxjs/toolkit</li>
+            <li>@emailjs/browser</li>
+            <li>sass</li>
           </ul>
           <p>To install them, first go inside the main folder, open a terminal and digit following:</p>
-          <code style="width: 30%;">npm install react-bootstrap bootstrap</code>
+          <code style="width: 70%;">npm install react-bootstrap bootstrap react-redux @reduxjs/toolkit @emailjs/browser sass</code>
           <p>After finish the installation, you shold see, in the <strong style="text-decoration: underline;">packages.json</strong> file the following dependencies:</p>
           <img src="./img/NPMPackages.png">
           <p><span class="bold-text">2. Running locally</span></p>
@@ -164,31 +168,28 @@
       <!-- SEPARATORE -->
       <hr>
       <!-- SEPARATORE -->
-      <section class="main-section" id="PortfolioSection">
+      <section class="main-section" id="Customization">
         <article>
-          <h1 style="font-size: 2rem;">Portfolio Section</h1>
-           <h3 style="font-size: 1.2rem;">There are a lot of deployment platform, like Vercel, Render, Heroku and many more.<br>
-            I used many times Vercel and found it really smooth and quite easy to understand.<br>You can follow the below instructions or, if you prefer, follow the official Vercel Guides on the official<a href="https://vercel.com/" target="_blank"> Vercel</a> website</h3>
-            <p>
-              <span class="bold-text">1. GITHUB</span>
-              <br>
-              If you have a github account login or if not register in github.<br>Create a repository and connect to ReactFolio via git remote add method.<br>After adding the remote url push ReactFolio to that git repository.
-              </p>
-              <p>
-              <span class="bold-text">2. VERCEL</span>
-              <br>If you don't have a Vercel account, create a new one simply signin up using your github account.<br>
-              Once you connected, go the Vercel DashBoard Click add new project. Select project from the GitHub repository where you stored ReactFolio</p>
-              <p>After importing the repository you will be redirected to deployment page here you can change the project name and many other.
-                After selecting a name for the project just click on deploy button.
-              It will take some time and after it will be live and a url will be given which can modified later on.<br>
-              Vercel will automatically detect the framework and any necessary build settings.</p>
-              <p>To view your deployment, select the Project in the dashboard and then select the Domain. This page is now visible to anyone who has the URL.</p>
-              <p style="font-weight: 800;text-decoration: underline;">Every time you will make any change in your file, after push to GitHub, Vercel will automatically change the deployment and you will immediately see the changes in your LIVE application. </p>
-              <p>See below images af a live deployment</p>
-              <img src="./img/vercel_deployment_ok.png">
-
-
-
+          <h1 style="font-size: 2rem;">Customization</h1>
+           <h3 style="font-size: 1.2rem;">Each component is a functional component, you can reuse it and has its own Css file, so you can easily customize it</h3>
+            <p style="font-size: 1rem;"><span class="bold-text">NAVBAR</span></p>
+            <p>Component: Navbar.jsx</p>
+            <p>Directory: /src/Components/Common</p>
+            <p>The navbar is setted using the Bootstrap5 OffCanvas NavBar type. The layout is setted with a left logo, a centered navigation and a rigth positioned icon to choose beetween Light and Dark theme. You can can choose to differently position, for example the navbar by modifying the justify content property of the ul element (see Below)</p>
+            <img src="./img/offcanvas_css.jpg">
+            <p>The logo is now composed by pulling aside an SVG logo and a text. You can choose to use another logo, the ideal dimensions for a logo are: 185px x 55px</p>
+            <hr>
+            <p style="font-size: 1rem;"><span class="bold-text">LIGTH DARK ICON</span></p>
+            <p>Component: SwitchDark.jsx</p>
+            <p>Directory: /src/Components/Common</p>
+            <p>This website uses FontAwesome icons, so you can easily change the icon (now is setted to Sun icon - fa-sun) changing the icon name using the <a href="https://fontawesome.com/" target="_blank">FontAwesome icons</a> </p>
+            <img src="./img/darkLigthIcon.jpg">
+            <hr>
+            <p style="font-size: 1rem;"><span class="bold-text">LIGTH DARK ICON</span></p>
+            <p>Component: SwitchDark.jsx</p>
+            <p>Directory: /src/Components/Common</p>
+            <p>This website uses FontAwesome icons, so you can easily change the icon (now is setted to Sun icon - fa-sun) changing the icon name using the <a href="https://fontawesome.com/" target="_blank">FontAwesome icons</a> </p>
+            <img src="./img/darkLigthIcon.jpg">
         </article>
       </section>
 

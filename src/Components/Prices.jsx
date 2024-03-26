@@ -7,12 +7,11 @@ function Prices() {
     let bgType, textType;
 
     themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
-
     themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
 
   return (
     <React.Fragment>
-        <div className={"container-fluid"+ " " + bgType + " " + textType} id='pricing'>
+        <div className={"container-fluid padding-top-bottom"+ " " + bgType + " " + textType} id='pricing'>
         <h1 className="section-title pt-5">Our Prices</h1>
         <p className='mb-5 text-center'>We offer great plans. Find the one that suits your needs.</p>
 

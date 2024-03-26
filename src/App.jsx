@@ -3,6 +3,7 @@ import Navbar from './Components/Common/Navbar';
 import Slider from './Components/Slider';
 import Services from './Components/Services';
 import CalltoAction from './Components/CallToAction';
+import CalltoActionSmall from './Components/CallToActionSmall';
 import About from './Components/About';
 import Footer from './Components/Common/Footer';
 import Prices from './Components/Prices';
@@ -23,6 +24,7 @@ function App() {
     <Services />
     <Portfolio />
     <Prices />
+    <CalltoActionSmall />
     <News />
     <Contact />
     <Footer />

@@ -4,16 +4,14 @@ import portFolio from '../assets/works/works.json';
 
 function Portfolio() {
 
-
+    // Port Filter function: Gets the category name from the works.json and create a list of unique buttons
+    // To select the category
     const categoryArray = [];
 
     portFolio.forEach(element => {
         categoryArray.push(element.category)
-
     });
-
     const uniqueFilters = ['All']
-
 
     function eliminateDuplicates(arr) {
         const arrayClone = [...arr];
@@ -31,8 +29,8 @@ function Portfolio() {
     }
 
     eliminateDuplicates(categoryArray)
+    // Port filter function end
 
-    console.log(uniqueFilters)
 
     function showAll(){
         let allBlocks = document.getElementsByClassName('port_block')
@@ -41,23 +39,28 @@ function Portfolio() {
             allBlocks[i].style.display = "block"
           }
     }
+
     showAll()
-
-
 
     function filterSelection(whatClicked){
 
-        let toTest = whatClicked;
-        console.log(toTest)
 
-        if(toTest == "All"){
+        if(whatClicked == "All"){
+        console.log('I AM ALL')
         showAll()
         }
 
+
         let allBlocks = document.getElementsByClassName('port_block')
-        let figa = document.getElementsByClassName(`${toTest}`)
-        // figa[i].style.display = "block"
-        console.log(figa[0])
+
+        for(let i =0; i<allBlocks.length;i++){
+            let cazzo = allBlocks[i].classList.value.split(' ')
+            console.log(whatClicked)
+
+          }
+
+
+
     }
 
   return (
@@ -72,7 +75,7 @@ function Portfolio() {
                     <div className="mx-auto">
                     {uniqueFilters.map((e)=>{
                     return(
-                        <button key={e.title} onClick={()=>filterSelection(e)} type="button" className="btn btn-outline-primary mx-2">{e}</button>
+                        <button key={e} onClick={()=>filterSelection(e)} type="button" className="btn btn-outline-primary mx-2">{e}</button>
                         )})}
                     </div>
                 </div>
@@ -82,7 +85,7 @@ function Portfolio() {
                 {portFolio.map((e)=>{
                     return(
 
-                    <div className={"col" + " " + e.category + " " + "port_block"} key={e.title}>
+                    <div key={e.title} className={"col" + " " + e.category + " " + "port_block"}>
                         <div className="card shadow-sm">
                             <img src={e.thumbImage}/>
                             <div className="card-body">
@@ -92,7 +95,7 @@ function Portfolio() {
                                     <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
                                     <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div>
-                                    <small className="text-body-secondary">{e.category}</small>
+                                    <small className="text-primary fs-6">{e.category}</small>
                                 </div>
                             </div>
                         </div>

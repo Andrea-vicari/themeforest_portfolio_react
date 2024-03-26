@@ -106,12 +106,12 @@ function Contact() {
 						<div className="d-grid">
 
   							<button className="btn btn-outline-primary mt-3 p-2 fs-3" type="submit">
-							  <i className="fa fa-location-arrow text-primary mx-3 fs-3"></i>
-								Send</button>
+
+								Send Mail</button>
 
 						</div>
 
-						<input type="hidden" name="submitted" id="submitted" value="true" />
+
 
 					</form>
 

@@ -1,3 +1,7 @@
 .tuca{
-background-color: brown;
+border:2px solid brown !important;
+}
+
+.foite{
+  border:2px solid green;
 }

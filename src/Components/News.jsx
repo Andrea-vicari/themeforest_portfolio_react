@@ -42,7 +42,7 @@ function News() {
 
                 return(
 
-                <div id='news_block' className={"col-sm-6 news-item" + " " + e.side}>
+                <div id='news_block' key={e.title} className={"col-sm-6 news-item" + " " + e.side}>
 
                     <div className="news-content">
 

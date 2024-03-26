@@ -22,7 +22,7 @@ function CallToAction() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
                     <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
 
-                    <a className="btn btn-outline-light" href="#services"><i className="fa fa-arrow-down"></i>See the magic</a>
+                    <a className="btn btn-outline-light" href="#services"><i className="fa fa-arrow-down"></i> Check our service</a>
 
                 </div>
 

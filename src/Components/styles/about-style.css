@@ -13,10 +13,10 @@
     /*Change below to adapt width and height of the icon */
     width: 74px;
     height: 74px;
-    background: #149ddd;
+    background: #0d6efd;
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid #149ddd;
+    border: 1px solid #0d6efd;
   }
 
   .about .icon i {
@@ -31,7 +31,7 @@
   }
 
   .about .icon-box:hover .icon i {
-    color: #149ddd;
+    color: #0d6efd;
   }
 
   .about .title {

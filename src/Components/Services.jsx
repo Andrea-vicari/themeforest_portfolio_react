@@ -18,7 +18,7 @@ function Services() {
         <div className="container">
 
             <h1 className="section-title">Our Services</h1>
-            <p className="section-description">We create awesome Websites and Mobile Apps, the perfect solution for your project.We don't make designs, we make magic!</p>
+            <p className="section-description">We create awesome Websites and Mobile Apps, the perfect solution for your project.</p>
 
             <div className="row services">
                 <div className="col-sm-3 item text-center scrollimation fade-right d2">
@@ -46,13 +46,13 @@ function Services() {
 
 <div className="col-sm-3 item text-center scrollimation fade-left d2">
 <div className="icon"><i className="fa fa-rocket"></i></div>
-<h3>Rocket Science</h3>
+<h3>Deployment</h3>
 <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 </div>
 </div>
 
             <h1 className="subsection-title">Our Process</h1>
-            <p className="subsection-description">You are a serious company. You deserve a serious sollution.We'll be there from the beginning to the very end of your project's development.</p>
+            <p className="subsection-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis omnis suscipit molestias amet in officiis impedit esse ipsum! Magni blanditiis ab molestias, doloremque doloribus ipsa error quidem quis deserunt sed.</p>
 
             <div className="process-box">
 

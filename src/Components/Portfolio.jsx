@@ -4,15 +4,15 @@ import portFolio from '../assets/works/works.json';
 
 function Portfolio() {
 
-    // Port Filter function: Gets the category name from the works.json and create a list of unique buttons
-    // To select the category
+    // Empty array
     const categoryArray = [];
-
+    // Loop on portfolio and push the category into the array
     portFolio.forEach(element => {
         categoryArray.push(element.category)
     });
+    // Declare an array with the first elemnt "all"
     const uniqueFilters = ['All']
-
+    // Function to eliinate double category from the array
     function eliminateDuplicates(arr) {
         const arrayClone = [...arr];
 
@@ -27,12 +27,12 @@ function Portfolio() {
 
         return uniqueFilters;
     }
-
+    // Run the eliminateDuplicates function on the array of categories
     eliminateDuplicates(categoryArray)
-    // Port filter function end
 
-
+    // Function to show all the portfolio blocks when key All is clicked
     function showAll(){
+        // Get all the block with class port_block
         let allBlocks = document.getElementsByClassName('port_block')
 
         for(let i=0;i<allBlocks.length;i++){
@@ -40,11 +40,12 @@ function Portfolio() {
           }
     }
 
-    showAll()
+    //showAll()
 
+    // Function to
     function filterSelection(whatClicked){
 
-
+        // Call showAll() when whatClicked is All
         if(whatClicked == "All"){
         console.log('I AM ALL')
         showAll()

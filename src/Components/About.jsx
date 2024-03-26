@@ -1,77 +1,60 @@
 import React from 'react'
+import { useSelector} from 'react-redux'
 
 function About() {
+
+  const themeType = useSelector((state) => state.counter.value)
+
+  let bgType, textType;
+
+  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
+
+  themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
+
   return (
     <>
-        <div className="container about" id='about'>
-          <h1 className="section-title text-center">Main Features</h1>
-          <p className="section-description">These are some of React Portfolio's Great Features. Explore the possibilities...</p>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <section id="about" className={"about py-5"+ " " + bgType + " " + textType}>
+          <div id='about_container' className="container">
 
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fab fa-react text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">React</h3>
-                  <p>Coded with React, smooth user experience and device compatibility</p>
-                </div>
+            <div className="section-title">
+              <h2>about {bgType}</h2>
+            </div>
+            <p className='text-center'>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div className="row pt-3">
+              <div className="col-lg-4 col-md-6 icon-box">
+                <div className="icon"><i className="fab fa-react"></i></div>
+                <h4 className="title">React</h4>
+                <p className="description">Coded with React, smooth user experience and device compatibility</p>
               </div>
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fa fa-cog text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">Components</h3>
-                  <p>Functional components, well organized and fully reusable</p>
-                </div>
+              <div className="col-lg-4 col-md-6 icon-box">
+                <div className="icon"><i className="fa fa-cog"></i></div>
+                <h4 className="title">Components</h4>
+                <p className="description">Functional components, well organized and fully reusable</p>
               </div>
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fab fa-css3 text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">Bootstrap5</h3>
-                  <p>Coded using Bootstrap5 framwork, to speed up future developments</p>
-                </div>
+              <div className="col-lg-4 col-md-6 icon-box">
+                <div className="icon"><i className="fab fa-css3"></i></div>
+                <h4 className="title">Bootstrap5</h4>
+                <p className="description">Coded using Bootstrap5 framework, to speed up future developments</p>
               </div>
+              <div className="col-lg-4 col-md-6 icon-box">
+                <div className="icon"><i className="fa fa-palette"></i></div>
+                <h4 className="title">Clean</h4>
+                <p className="description">Clean and elegant design suitable for many projects and business</p>
+              </div>
+              <div className="col-lg-4 col-md-6 icon-box">
+                <div className="icon"><i className="fab fa-android"></i></div>
+                <h4 className="title">Responsive</h4>
+                <p className="description">Responsive layout, perfectly showcase your projects in all devices</p>
+              </div>
+              <div className="col-lg-4 col-md-6 icon-box">
+                <div className="icon"><i className="fab fa-js"></i></div>
+                <h4 className="title">JSON</h4>
+                <p className="description">JSON or API friendly. Customize portfolio via JSON or APIs </p>
+              </div>
+            </div>
 
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fa fa-palette text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">Clean</h3>
-                  <p>Clean and elegant design suitable for many projects and business</p>
-                </div>
-              </div>
-        </div>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fab fa-android text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">Responsive</h3>
-                  <p>Responsive layout, perfectly showcase your projects in all devices</p>
-                </div>
-              </div>
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fab fa-react text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">JSON</h3>
-                  <p>JSON or API friendly. Customize portfolio via JSON or APIs </p>
-                </div>
-              </div>
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fab fa-react text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">Feature</h3>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-              </div>
-
-              <div className="about-icon col d-flex align-items-start">
-                <i className='fab fa-react text-bg-primary bg-primary p-2 mx-3'></i>
-                <div>
-                  <h3 className="fw-bold mb-0 fs-4">Feature</h3>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-              </div>
-        </div>
-      </div>
-
+          </div>
+        </section>
     </>
   )
 }

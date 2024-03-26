@@ -1,0 +1,28 @@
+[{
+   "Date":13,
+   "Month":"Mar",
+    "title":"A bicicle ride",
+    "NewsImg":"./news_images/news1.jpg",
+    "ThumbImg":"./news_images/news1_thumb.jpg",
+    "excerpt":"Lorem ispum lorem ispum loren ipsum",
+    "description":"descrizione del post descrizione del post"
+},
+{
+    "Date":14,
+    "Month":"Mar",
+     "title":"Deploy React app on Vercel",
+     "NewsImg":"./news_images/news2.jpg",
+     "ThumbImg":"./news_images/news2_thumb.jpg",
+     "excerpt":"In this article we will share how to deploy",
+     "description":"In this article we will share how to deploy a static react App on Vercel"
+ },
+ {
+     "Date":22,
+     "Month":"Mar",
+      "title":"Deploy React app on Render",
+      "NewsImg":"./news_images/new3.jpg",
+      "ThumbImg":"./news_images/new3_thumb.jpg",
+      "excerpt":"In this article we will share how to deploy",
+      "description":"In this article we will share how to deploy a static react App on Vercel"
+  }]
+

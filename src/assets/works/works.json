@@ -1,7 +1,7 @@
 
 [{
     "introImage":"../works/portfolio_images/port1.jpg",
-    "thumbImage":"./portfolio_images/port1.jpg",
+    "thumbImage":"./portfolio_images/port5.jpg",
     "type":"portfolio_post",
     "title":"Title1",
     "excerpt":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat.",
@@ -48,7 +48,7 @@
     "fullImage":"../works/portfolio_images/port3.jpg"
 },
 {
-    "introImage":"../works/portfolio_images/port3.jpg",
+    "introImage":"../works/portfolio_images/port4.jpg",
     "thumbImage":"./portfolio_images/port3.jpg",
     "type":"portfolio_post",
     "title":"Title3",

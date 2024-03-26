@@ -15,7 +15,7 @@
     height:100%;
     left:1px;
     top:0;
-    border-right:1px solid #0d6efd;
+    border-right:1px solid #5CC9DF;
     z-index:-1;
 }
 
@@ -27,7 +27,7 @@
     height:100px;
     left:1px;
     bottom:-105px;
-    border-right:1px dashed #0d6efd;
+    border-right:1px dashed #5CC9DF;
     z-index:-1;
 }
 
@@ -41,7 +41,7 @@
     font-size:21px;
     font-weight:400;
     color:#fff;
-    background:#0d6efd;
+    background:#5CC9DF;
     border-radius:5px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .news-item:hover .news-content {
-    background:#0d6efd;
+    background:#5CC9DF;
     color:#fff;
 }
 
@@ -102,12 +102,12 @@
 }
 
 .news-item:hover .news-content:after {
-    border-left-color:#0d6efd;
+    border-left-color:#5CC9DF;
 }
 
 .news-item.right:hover .news-content:after {
     border-left-color:transparent;
-    border-right-color:#0d6efd;
+    border-right-color:#5CC9DF;
 }
 
 .news-item .news-content:before {
@@ -118,7 +118,7 @@
     height:20px;
     right:-55px;
     top:60px;
-    background:#0d6efd;
+    background:#5CC9DF;
     border:3px solid #fff;
     border-radius:50%;
     -webkit-transition:background .3s ease-out;
@@ -126,7 +126,7 @@
 }
 
 .news-item.right .news-content:before {
-    left:-55px;
+    left:-49px;
     right:auto;
 }
 
@@ -136,7 +136,7 @@
     height:80px;
     left:10px;
     text-align:center;
-    color:#0d6efd;
+    color:#5CC9DF;
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
 }
@@ -205,7 +205,7 @@
     font-family:'FontAwesome';
     font-size:21px;
     line-height:21px;
-    color:#0d6efd;
+    color:#5CC9DF;
     vertical-align:middle;
     -webkit-transition:padding .3s ease-out;
     transition:padding .3s ease-out;
@@ -258,7 +258,7 @@
     font-size:32px;
     line-height:80px;
     text-align:center;
-    color:#0d6efd;
+    color:#5CC9DF;
     -webkit-transform:scale(0);
     transform:scale(0);
     opacity:0;
@@ -280,13 +280,14 @@
     box-shadow:4px 4px 0 #bbb,8px 8px 0 #ddd;
 }
 
+/* MEDIA QUERIES*/
 @media (max-width: 991px) {
     .news-content .news-media{
         bottom:-55px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px){
     .news-item.right {
         margin-top:0;
     }
@@ -302,6 +303,7 @@
     }
 
 }
+
 @media (max-width: 479px) {
 
 

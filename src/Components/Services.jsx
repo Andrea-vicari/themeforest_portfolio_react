@@ -1,9 +1,19 @@
 import React from 'react'
+import { useSelector} from 'react-redux'
 
 function Services() {
+
+  const themeType = useSelector((state) => state.counter.value)
+
+  let bgType, textType;
+
+  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
+
+  themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
+
   return (
     <React.Fragment>
-        <section id="services" className="white-bg padding-top-bottom">
+        <section id="services" className={"padding-top-bottom"+ " " + bgType + " " + textType}>
 
         <div className="container">
 

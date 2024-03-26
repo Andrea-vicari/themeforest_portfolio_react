@@ -1,6 +1,8 @@
 import React from 'react'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import SuccesMail from './SuccesMail';
+
 
 function Contact() {
 	const form = useRef();
@@ -9,11 +11,13 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_krggjnj', 'template_g56sqe5', form.current, {
+      .sendForm('react_portfolio', 'template_react_portfolio', form.current, {
         publicKey: 'xiQcRPgg-RfCqkF7p',
       })
       .then(
         () => {
+
+			showSuccess()
           console.log('SUCCESS!');
         },
         (error) => {
@@ -21,6 +25,12 @@ function Contact() {
         },
       );
   };
+
+  const showSuccess = () =>{
+	document.getElementById('successModal').classList.add("d-block");
+  }
+
+
   return (
     <React.Fragment>
         <section id="contact" className="bg-body-secondary pt-5 pb-5">
@@ -30,7 +40,7 @@ function Contact() {
 				<h1 className="section-title">Keep in Touch</h1>
 				<p className="section-description">Are you ready to start your project? Give us call or drop us a line.</p>
 
-				<div className="row">
+				<div className="row pb-1">
 
 					<div className="col-sm-4 text-center contact-item">
 
@@ -48,7 +58,7 @@ function Contact() {
 
 					</div>
 
-					<div className="col-sm-4 text-center contact-item">
+					<div className="col-sm-4 text-center contact-item mb-4">
 
 						<a className="icon" href="#link"><i className="fab fa-twitter fa-fw"></i></a>
 						<h2>Call us</h2>
@@ -56,12 +66,11 @@ function Contact() {
 
 					</div>
 
+					<h1 className="subsection-title">Drop us a line</h1>
+					<p className="subsection-description">Drop us a line and we will contact you as soon as possible.</p>
 				</div>
 
-				<h1 className="subsection-title">Drop us a line</h1>
-				<p className="subsection-description">Drop us a line and we will contact you as soon as possible.</p>
-
-				<div className="row">
+				<div className="row pt-0">
 
 
 
@@ -70,30 +79,34 @@ function Contact() {
 						<div className="form-group">
 						  <label className="control-label" htmlFor="contact-name">Name</label>
 						  <div className="controls">
-							<input id="contact-name" name="user_name" placeholder="Your name" className="form-control requiredField label_better" type="text" data-error-empty="Please enter your name"/>
+
+							<input id="contact-name" required name="user_name" placeholder="Your name" className="form-control requiredField label_better" type="text" data-error-empty="Please enter your name"/>
 							<i className="fa fa-user text-primary"></i>
+
 						  </div>
 						</div>
 
 						<div className="form-group">
 						  <label className="control-label" htmlFor="contact-mail">Email</label>
 						  <div className=" controls">
-							<input id="contact-mail" name="user_email" placeholder="Your email" className="form-control requiredField label_better" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address"/>
+							<input id="contact-mail" required name="user_email" placeholder="Your email" className="form-control requiredField label_better" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address"/>
 							<i className="fa fa-envelope text-primary"></i>
+
 						  </div>
 						</div>
 
 						<div className="form-group">
 						  <label className="control-label" htmlFor="contact-message">Message</label>
 							<div className="controls">
-								<textarea id="contact-message" name="message"  placeholder="Your message" className="form-control requiredField label_better" rows="6" data-error-empty="Please enter your message"></textarea>
+								<textarea id="contact-message" required name="message"  placeholder="Your message" className="form-control requiredField label_better" rows="6" data-error-empty="Please enter your message"></textarea>
 								<i className="fa fa-comment text-primary"></i>
+
 							</div>
 						</div>
 						<div className="d-grid">
 
-  							<button className="btn btn-outline-primary mt-5 p-2" type="submit">
-							  <i className="fa fa-location-arrow text-primary mx-3"></i>
+  							<button className="btn btn-outline-primary mt-3 p-2 fs-3" type="submit">
+							  <i className="fa fa-location-arrow text-primary mx-3 fs-3"></i>
 								Send</button>
 
 						</div>
@@ -102,7 +115,12 @@ function Contact() {
 
 					</form>
 
+
 				</div>
+
+				{/* Modal Component */}
+				<SuccesMail />
+
 
 			</div>
 

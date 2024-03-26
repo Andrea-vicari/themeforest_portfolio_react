@@ -1,8 +1,17 @@
 import React from 'react'
-import NewsImgFull from '../Components/images/news_images/bicycle_ride.jpg'
-import NewsImgThumb from '../Components/images/news_images/bicycle_ride_thumb.jpg'
+import newsList from '../assets/news/news.json';
+
 
 function News() {
+
+        // This for loop is to assign the class "rigth" every two blocks
+        // in order to create the Timeline effect
+
+       for(let i=0;i<newsList.length;i++){
+        i % 2 !== 0 ? newsList[i].side = "right" : newsList[i].side = "left"
+        }
+
+
   return (
     <>
     <section id="news" className="white-bg padding-top-bottom">
@@ -20,37 +29,38 @@ function News() {
 
             <div className="row">
 
-                <div className="col-sm-6 news-item">
+            {newsList.map((e)=>{
+
+                return(
+
+                <div id='news_block' className={"col-sm-6 news-item" + " " + e.side}>
 
                     <div className="news-content">
 
                         <div className="date">
-                            <p>28</p>
-                            <small>Fri</small>
+                            <p>{e.Date}</p>
+                            <small>{e.Month}</small>
                         </div>
 
-                        <h2 className="news-title">A Bicycle Ride</h2>
+                        <h2 className="news-title">{e.title}</h2>
+                            <div className="news-media">
+                                <a className="colorbox cboxElement" href={e.NewsImg}>
+                                    <img className="img-responsive" src={e.ThumbImg} alt=""/>
+                                </a>
+                            </div>
 
-                        <div className="news-media">
-                            <a className="colorbox" href={NewsImgFull}><img className="img-responsive"
-                                    src={NewsImgThumb} alt="" /></a>
-                        </div>
-
-                        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
-                            those who do not know how to pursue pleasure&hellip;</p>
+                        <p>{e.excerpt}</p>
 
                         <a className="read-more" href="#">Read More</a>
 
                     </div>
                 </div>
-
+                )})}
 
             </div>
-
-
         </div>
 
-        <p className="text-center"><a className="btn btn-qubico" href="blog/blog.html">Read our Blog</a></p>
+        <p className="text-center"><a className="btn btn-primary mt-1 p-3 fs-5" href="blog/blog.html">Read our Blog</a></p>
 
     </div>
 

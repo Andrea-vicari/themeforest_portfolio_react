@@ -26,7 +26,7 @@ function Portfolio() {
         for (let i in supportObject) {
           uniqueFilters.push(i);
         }
-        console.log(uniqueFilters)
+
         return uniqueFilters;
     }
 
@@ -34,14 +34,30 @@ function Portfolio() {
 
     console.log(uniqueFilters)
 
-    function hidePort(ciao){
-        console.log(ciao)
-        document.getElementById(ciao).classList.add("d-block")
-
-    }
-
     function showAll(){
+        let allBlocks = document.getElementsByClassName('port_block')
 
+        for(let i=0;i<allBlocks.length;i++){
+            allBlocks[i].style.display = "block"
+          }
+    }
+    showAll()
+
+
+
+    function filterSelection(whatClicked){
+
+        let toTest = whatClicked;
+        console.log(toTest)
+
+        if(toTest == "All"){
+        showAll()
+        }
+
+        let allBlocks = document.getElementsByClassName('port_block')
+        let figa = document.getElementsByClassName(`${toTest}`)
+        // figa[i].style.display = "block"
+        console.log(figa[0])
     }
 
   return (
@@ -56,7 +72,7 @@ function Portfolio() {
                     <div className="mx-auto">
                     {uniqueFilters.map((e)=>{
                     return(
-                        <button key={e.title} onClick={()=>hidePort(e)} type="button" className="btn btn-outline-primary mx-2">{e}</button>
+                        <button key={e.title} onClick={()=>filterSelection(e)} type="button" className="btn btn-outline-primary mx-2">{e}</button>
                         )})}
                     </div>
                 </div>
@@ -66,18 +82,18 @@ function Portfolio() {
                 {portFolio.map((e)=>{
                     return(
 
-                    <div className="col" id={e.category} key={e.title}>
+                    <div className={"col" + " " + e.category + " " + "port_block"} key={e.title}>
                         <div className="card shadow-sm">
                             <img src={e.thumbImage}/>
                             <div className="card-body">
-                            <p className="card-text">{e.excerpt}</p>
-                            <div className="d-flex justify-content-between align-items-center">
-                                <div className="btn-group">
-                                <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                                <p className="card-text">{e.excerpt}</p>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div className="btn-group">
+                                    <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small className="text-body-secondary">{e.category}</small>
                                 </div>
-                                <small className="text-body-secondary">{e.category}</small>
-                            </div>
                             </div>
                         </div>
                     </div>

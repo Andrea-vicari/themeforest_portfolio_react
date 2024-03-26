@@ -10,7 +10,10 @@ import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
 import News from './Components/News';
 
+
 function App() {
+
+
   return (
     <>
     <Navbar />

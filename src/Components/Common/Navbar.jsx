@@ -1,6 +1,5 @@
 import React from 'react'
 import reactLogo from "../images/react_colored.svg"
-import SocialMenu from '../Common/SocialMenu';
 import DarkSelector from '../Common/SwitchDark'
 import { useSelector, useDispatch } from 'react-redux'
 

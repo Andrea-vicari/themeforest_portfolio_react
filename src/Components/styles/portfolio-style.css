@@ -1,7 +1,11 @@
-.tuca{
-border:2px solid brown !important;
+.visible{
+display: block !important;
 }
 
-.foite{
-  border:2px solid green;
+.hidden{
+  display: none !important;
+}
+
+.bordered{
+  border: 2px solid yellowgreen;
 }

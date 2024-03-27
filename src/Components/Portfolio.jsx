@@ -1,5 +1,5 @@
 import React from 'react'
-import portFolio from '../assets/works/works.json';
+import portFolio from '../assets/works/portfolio.json';
 
 
 function Portfolio() {
@@ -12,7 +12,7 @@ function Portfolio() {
     });
     // Declare an array with the first elemnt "all"
     const uniqueFilters = ['All']
-    // Function to eliinate double category from the array
+    // Function to eliminate double category from the array
     function eliminateDuplicates(arr) {
         const arrayClone = [...arr];
 
@@ -30,35 +30,28 @@ function Portfolio() {
     // Run the eliminateDuplicates function on the array of categories
     eliminateDuplicates(categoryArray)
 
-    // Function to show all the portfolio blocks when key All is clicked
-    function showAll(){
-        // Get all the block with class port_block
-        let allBlocks = document.getElementsByClassName('port_block')
-
-        for(let i=0;i<allBlocks.length;i++){
-            allBlocks[i].style.display = "block"
-          }
-    }
-
-    //showAll()
-
-    // Function to
+    // Function to filter the portfolio blocks
     function filterSelection(whatClicked){
-
-        // Call showAll() when whatClicked is All
-        if(whatClicked == "All"){
-        console.log('I AM ALL')
-        showAll()
-        }
 
         // array of all css props of portfolios block
         let allBlocks = document.getElementsByClassName('port_block')
 
         // Loop through all blocks
         for(let i =0; i<allBlocks.length;i++){
-            let cazzo = allBlocks[i].classList.value.split(' ')
-            console.log(whatClicked)
+            // Array of the css props of single portfolio block
+            let arrayOfPropsBlock = allBlocks[i].classList.value.split(' ')
 
+            // Function to test if element is equal to whatClicked
+            const isPresent = (element) => element == whatClicked;
+                // If .some() returns false hide the blocks
+                if(arrayOfPropsBlock.some(isPresent) == false && whatClicked != "All"){
+                    allBlocks[i].classList.add('hidden')
+                }
+                // Otherwise shows the block whose cat is equal to whatclicked
+                else{
+                      allBlocks[i].classList.remove('hidden')
+                      allBlocks[i].classList.add('visible')
+                  }
           }
     }
 
@@ -91,8 +84,9 @@ function Portfolio() {
                                 <p className="card-text">{e.excerpt}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                    <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <a className="btn btn-outline-primary p-1" href="#link">
+                                            <i className="fs-6 fa fa-search"></i> See Project
+                                        </a>
                                     </div>
                                     <small className="text-primary fs-6">{e.category}</small>
                                 </div>

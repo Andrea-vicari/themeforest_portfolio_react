@@ -18,7 +18,7 @@ function CallToAction() {
 
                 <div className="col-sm-5 col-sm-offset-1">
 
-                    <h1>Call to Action Section {count}</h1>
+                    <h1>Call to Action Section</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
                     <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
 

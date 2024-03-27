@@ -12,7 +12,11 @@ function CallToActionSmall() {
                     <p>Call to action (CTA) is a marketing term for any device designed to prompt an immediate response or encourage an immediate sale.</p>
                 </div>
                 <div className="col-md-3 mt-3">
-                    <p className="text-center"><a className="btn btn-outline-dark btn-lg p-3" href="#link"><i className="fs-3 fa fa-shopping-cart"></i> Purchase Now</a></p>
+                    <p className="text-center">
+                        <a className="btn btn-outline-dark btn-lg p-3" href="#link">
+                            <i className="fs-3 fa fa-shopping-cart"></i> Purchase Now
+                        </a>
+                    </p>
                 </div>
             </div>
 

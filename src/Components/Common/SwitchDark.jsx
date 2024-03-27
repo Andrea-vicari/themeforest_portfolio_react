@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { dark, ligth } from '../../CounterSlice'
+import { dark, ligth } from '../../redux/DarkSlice'
 
 
 function SwitchDark() {

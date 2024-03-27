@@ -17,9 +17,9 @@ function Slider() {
         <img src={slide1} />
         <div className="container">
           <div className="carousel-caption text-center">
-            <h1>Example headline.</h1>
-            <p className="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>FrontEnd web developer</h1>
+            <p className="opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a, voluptatibus modi veniam perspi</p>
+            <p><a className="btn btn-lg btn-primary" href="#">Check my portfolio</a></p>
           </div>
         </div>
       </div>
@@ -27,9 +27,9 @@ function Slider() {
       <img src={slide2} />
         <div className="container">
           <div className="carousel-caption text-center">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>Creative agency</h1>
+            <p>We create awesome Websites and Mobile Apps, the perfect solution for your project.</p>
+            <p><a className="btn btn-lg btn-primary" href="#">Our services</a></p>
           </div>
         </div>
       </div>

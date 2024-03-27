@@ -33,7 +33,7 @@ function News() {
         <div className="timeline">
 
             <div className="date-title">
-                <span>March 2014</span>
+                <span>Jan 2024</span>
             </div>
 
             <div className="row">

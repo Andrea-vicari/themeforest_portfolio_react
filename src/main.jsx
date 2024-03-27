@@ -13,15 +13,16 @@ import '../src/Components/styles/portfolio-style.css'
 import '../src/Components/styles/contact-style.css'
 
 // Main CSS
-import './index.scss'
+import './assets/css/index.scss'
 
 // Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import store from './store.jsx'
+import store from './redux/store.jsx'
 import { Provider } from 'react-redux'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+
   <Provider store={store}>
     <App />
   </Provider>,

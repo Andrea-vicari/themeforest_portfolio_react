@@ -17,7 +17,7 @@ function About() {
           <div id='about_container' className="container">
 
             <div className="section-title">
-              <h2>about {bgType}</h2>
+              <h2>about</h2>
             </div>
             <p className='text-center'>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             <div className="row pt-3">

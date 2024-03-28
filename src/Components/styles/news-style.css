@@ -1,6 +1,16 @@
 /*-------------------
 -----News Styles-----
 ---------------------*/
+
+/* Color SASS Variables */
+:root {
+    --blue_boot: #0d6efd;
+    --red_boot: #dc3545;
+    --ligth_blue_boot: #0dcaf0;
+    --orange_boot: #ffc107;
+    --green_boot: #198754;
+  }
+
 .timeline{
     position:relative;
     margin-bottom:100px;
@@ -15,7 +25,7 @@
     height:100%;
     left:1px;
     top:0;
-    border-right:1px solid #0d6efd;
+    border-right:1px solid var(--blue_boot);
     z-index:-1;
 }
 
@@ -27,7 +37,7 @@
     height:100px;
     left:1px;
     bottom:-105px;
-    border-right:1px dashed #0d6efd;
+    border-right:1px dashed var(--blue_boot);
     z-index:-1;
 }
 
@@ -41,7 +51,7 @@
     font-size:21px;
     font-weight:400;
     color:#fff;
-    background:#0d6efd;
+    background:var(--blue_boot);
     border-radius:5px;
 }
 
@@ -67,7 +77,7 @@
 }
 
 .news-item:hover .news-content {
-    background:#0d6efd;
+    background:var(--blue_boot);
     color:#fff;
 }
 
@@ -102,12 +112,12 @@
 }
 
 .news-item:hover .news-content:after {
-    border-left-color:#0d6efd;
+    border-left-color:var(--blue_boot);
 }
 
 .news-item.right:hover .news-content:after {
     border-left-color:transparent;
-    border-right-color:#0d6efd;
+    border-right-color:var(--blue_boot);
 }
 
 .news-item .news-content:before {
@@ -118,7 +128,7 @@
     height:20px;
     right:-55px;
     top:60px;
-    background:#0d6efd;
+    background:var(--blue_boot);
     border:3px solid #fff;
     border-radius:50%;
     -webkit-transition:background .3s ease-out;
@@ -136,7 +146,7 @@
     height:80px;
     left:10px;
     text-align:center;
-    color:#0d6efd;
+    color:var(--blue_boot);
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
 }
@@ -205,7 +215,7 @@
     font-family:'FontAwesome';
     font-size:21px;
     line-height:21px;
-    color:#0d6efd;
+    color:var(--blue_boot);
     vertical-align:middle;
     -webkit-transition:padding .3s ease-out;
     transition:padding .3s ease-out;
@@ -258,7 +268,7 @@
     font-size:32px;
     line-height:80px;
     text-align:center;
-    color:#0d6efd;
+    color:var(--blue_boot);
     -webkit-transform:scale(0);
     transform:scale(0);
     opacity:0;

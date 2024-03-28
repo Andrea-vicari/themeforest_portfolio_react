@@ -1,6 +1,15 @@
 /*----------------------
 -----Contact Styles-----
 ------------------------*/
+/* Color SASS Variables */
+:root {
+    --blue_boot: #0d6efd;
+    --red_boot: #dc3545;
+    --ligth_blue_boot: #0dcaf0;
+    --orange_boot: #ffc107;
+    --green_boot: #198754;
+  }
+
 .contact-item h2{
     font-size:18px;
     font-weight:600;
@@ -10,14 +19,16 @@
 .contact-item .icon{
     display:block;
     font-size:48px;
-    color:#0d6efd;
+    color: var(--blue_boot);
+    /*color:#0d6efd;*/
     text-shadow:-2px 2px 0 rgba(0,0,0,0.1);
     -webkit-transition:all .3s ease-out;
     transition:all .3s ease-out;
 }
 
 .contact-item .icon:hover{
-    color:#0d6efd;
+    color: var(--blue_boot);
+    /*color:#0d6efd;*/
     -webkit-transform:scale(1.3) translateY(-10px);
     transform:scale(1.3) translateY(-10px);
 }
@@ -166,4 +177,11 @@
 
 #contact-form.no-placeholder .error-message {
     top:0;
+}
+
+/* Errors from Javascript validation */
+.mail_errors{
+    font-size: 1.5rem;
+    color:#ff3345;
+    padding-left: 20px;
 }

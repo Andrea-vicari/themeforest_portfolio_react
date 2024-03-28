@@ -42,6 +42,7 @@ function Portfolio() {
         }
 
         return uniqueFilters;
+
     }
     // Run the eliminateDuplicates function on the array of categories
     eliminateDuplicates(categoryArray)

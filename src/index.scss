@@ -1,8 +1,3 @@
-// Custom variables
-$primary:#1bec22;
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-
-
 /*--------------------
 -----Main Styles------
 ----------------------*/
@@ -13,6 +8,14 @@ body{
 	font-weight:300;
 	overflow-x:hidden;
 }
+
+/* Color SASS Variables */
+$blue_boot: #0d6efd;
+$red_boot: #dc3545;
+$ligth_blue_boot: #0dcaf0;
+$orange_boot: #ffc107;
+$green_boot: #198754;
+
 
 h1,
 h2,
@@ -50,13 +53,13 @@ a:focus {
 }
 
 a {
-  color:#0d6efd;
+  color:$red_boot;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color:#0d6efd;
+  color:$red_boot;
   text-decoration: underline;
 }
 
@@ -76,9 +79,6 @@ a:focus,
   text-decoration: none;
 }
 
-.primary {
-	color:#0d6efd;
-}
 
 
 
@@ -160,7 +160,7 @@ a:focus,
     left:50%;
     bottom:-15px;
     margin-left:-50px;
-    background:#0d6efd;
+    background:$red_boot;
     border-radius:3px;
     box-shadow:0 2px 0 rgba(0,0,0,0.08);
 }
@@ -226,7 +226,7 @@ a:focus,
 }
 
 .social-links li:hover a{
-    color:#0d6efd;
+    color:$red_boot;
 }
 #main-footer p{
 font-size: 1.29rem;

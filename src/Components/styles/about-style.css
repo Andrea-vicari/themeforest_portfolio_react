@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
-# About component and animations
+# About component
 --------------------------------------------------------------*/
+/* Color SASS Variables */
+:root {
+  --blue_boot: #0d6efd;
+  --red_boot: #dc3545;
+  --ligth_blue_boot: #0dcaf0;
+  --orange_boot: #ffc107;
+  --green_boot: #198754;
+}
+
 .about .icon-box {
     margin-bottom: 20px;
   }
@@ -13,10 +22,11 @@
     /*Change below to adapt width and height of the icon */
     width: 74px;
     height: 74px;
-    background: #0d6efd;
+    background:var(--blue_boot);
+
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--blue_boot);
   }
 
   .about .icon i {
@@ -31,7 +41,7 @@
   }
 
   .about .icon-box:hover .icon i {
-    color: #0d6efd;
+    color: var(--blue_boot);
   }
 
   .about .title {
@@ -46,7 +56,7 @@
   }
 
   .about .title a:hover {
-    color: #0d6efd;
+    color: var(--blue_boot);
   }
 
   .about .description {

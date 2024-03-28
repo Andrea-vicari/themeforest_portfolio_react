@@ -19,7 +19,7 @@
  {
      "Date":22,
      "Month":"Mar",
-      "title":"Deploy a Mern app on Vender",
+      "title":"Deploy a Mern app on Vercel",
       "NewsImg":"./news_images/new3.jpg",
       "ThumbImg":"./news_images/new3_thumb.jpg",
       "excerpt":"In this article we will share how to deploy a Mern stack project",

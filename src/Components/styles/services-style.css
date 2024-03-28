@@ -1,6 +1,15 @@
 /*-----------------------
 -----Services Styles-----
 -------------------------*/
+/* Color SASS Variables */
+:root {
+    --blue_boot: #0d6efd;
+    --red_boot: #dc3545;
+    --ligth_blue_boot: #0dcaf0;
+    --orange_boot: #ffc107;
+    --green_boot: #198754;
+  }
+
 .services{
     margin-top:80px;
     margin-bottom:40px;
@@ -12,7 +21,7 @@
     height:150px;
     margin:0 auto;
     text-align:center;
-    background:#0d6efd;
+    background:var(--blue_boot);
     line-height:150px;
     font-size:48px;
     color:#fff;
@@ -56,7 +65,7 @@
 }
 
 .services .item:hover h3 {
-    color:#0d6efd;
+    color:var(--blue_boot);
 }
 
 .services p {
@@ -129,7 +138,7 @@
 }
 
 .process-list li.colored .icon{
-    background:#0d6efd;
+    background:var(--blue_boot);
 }
 
 .process-list li:nth-child(1) {
@@ -214,7 +223,7 @@
     margin:0 10%;
     height:0;
     top:80px;
-    border-top:3px dotted #0d6efd;
+    border-top:3px dotted var(--blue_boot);
     z-index:-1;
 }
 

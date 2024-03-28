@@ -17,7 +17,7 @@ function Contact() {
       .then(
         () => {
 
-			showSuccess()
+		 showSuccess()
           console.log('SUCCESS!');
         },
         (error) => {
@@ -25,6 +25,7 @@ function Contact() {
         },
       );
   };
+
 
   const showSuccess = () =>{
 	document.getElementById('successModal').classList.add("d-block");

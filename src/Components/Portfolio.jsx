@@ -4,7 +4,23 @@ import portFolio from '../assets/works/portfolio.json';
 
 function Portfolio() {
 
-    // Empty array
+    // Declare a fixed length excerpt
+    var fixedLengthExcerpt;
+    // Function to short down a long description and generate an excerpt
+    // the length can be set by editing "arrayPh.length = x"
+    const shorter = (phrase) =>{
+      let arrayPh = phrase.split(' ');
+      arrayPh.length = 12;
+      fixedLengthExcerpt = arrayPh.join(' ');
+      return fixedLengthExcerpt
+    }
+    // Run shorter() and add an excerpt to each object of portfolio
+    for(let i=0;i<portFolio.length;i++){
+        shorter(portFolio[i].description)
+        portFolio[i].fixedLengthExcerpt = fixedLengthExcerpt
+    }
+
+    // Empty array to get the categories
     const categoryArray = [];
     // Loop on portfolio and push the category into the array
     portFolio.forEach(element => {
@@ -81,7 +97,7 @@ function Portfolio() {
                         <div className="card shadow-sm">
                             <img src={e.thumbImage}/>
                             <div className="card-body">
-                                <p className="card-text">{e.excerpt}</p>
+                                <p className="card-text">{e.fixedLengthExcerpt}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
                                         <a className="btn btn-outline-primary p-1" href="#link">

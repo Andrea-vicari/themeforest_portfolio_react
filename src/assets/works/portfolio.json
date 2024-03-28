@@ -2,53 +2,44 @@
 [{
     "thumbImage":"./portfolio_images/portfolio_img_full_6.jpg",
     "title":"Title1",
-    "excerpt":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat.",
     "category":"React",
     "extLink":"#",
-    "description":"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p>"
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat ratione alias corrupti asperiores temporibus repellat magnam, nemo dolore doloremque facere. Suscipit labore sint sequi, nisi vel adipisci inventore quia."
 
 },
 {
     "thumbImage":"./portfolio_images/portfolio_img_full_1.jpg",
     "title":"Title2",
-    "excerpt":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat.",
     "category":"Laravel",
     "extLink":"#",
-    "description":"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p>"
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat ratione alias corrupti asperiores temporibus repellat magnam, nemo dolore doloremque facere. Suscipit labore sint sequi, nisi vel adipisci inventore quia."
 
 },
 {
-
     "thumbImage":"./portfolio_images/portfolio_img_full_2.jpg",
     "title":"Title3",
-    "excerpt":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat.",
     "category":"Javascript",
     "extLink":"#",
-    "description":"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p>"
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat ratione alias corrupti asperiores temporibus repellat magnam, nemo dolore doloremque facere. Suscipit labore sint sequi, nisi vel adipisci inventore quia."
 },
 {
     "thumbImage":"./portfolio_images/portfolio_img_full_3.jpg",
     "title":"Title4",
-    "excerpt":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat.",
     "category":"Javascript",
     "extLink":"#",
-    "description":"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p>"
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat ratione alias corrupti asperiores temporibus repellat magnam, nemo dolore doloremque facere. Suscipit labore sint sequi, nisi vel adipisci inventore quia."
 },
 {
-
     "thumbImage":"./portfolio_images/portfolio_img_full_4.jpg",
     "title":"Title5",
-    "excerpt":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat.",
     "category":"Node",
     "extLink":"#",
-    "description":"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p>"
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat ratione alias corrupti asperiores temporibus repellat magnam, nemo dolore doloremque facere. Suscipit labore sint sequi, nisi vel adipisci inventore quia."
 },
 {
-
     "thumbImage":"./portfolio_images/portfolio_img_full_5.jpg",
     "title":"Title6",
-    "excerpt":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat.",
     "category":"Mongo",
     "extLink":"#",
-    "description":"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a accusantium. Enim, molestiae minima aperiam temporibus aspernatur doloribus ipsa ducimus, tempora quis sunt eum vero velit placeat. Architecto, eos voluptatibus.</p>"
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat ratione alias corrupti asperiores temporibus repellat magnam, nemo dolore doloremque facere. Suscipit labore sint sequi, nisi vel adipisci inventore quia."
 }]

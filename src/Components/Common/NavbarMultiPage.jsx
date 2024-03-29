@@ -1,6 +1,7 @@
 import React from 'react'
 import reactLogo from "../images/react_colored.svg"
 import DarkSelector from '../Common/SwitchDark'
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 
 
@@ -13,9 +14,9 @@ function Navbar() {
     <>
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme={count}>
     <div className="container">
-      <a className="navbar-brand" href='/'>
+      <Link className="navbar-brand" to={'/'}>
         <img src={reactLogo}></img> React Portfolio
-      </a>
+      </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -28,7 +29,7 @@ function Navbar() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
             <li className="nav-item">
-              <a className="nav-link fs-5 active" aria-current="page" href='/'>Home</a>
+              <Link className="nav-link fs-5 active" aria-current="page" to>Home</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link fs-5" href="#about">About</a>

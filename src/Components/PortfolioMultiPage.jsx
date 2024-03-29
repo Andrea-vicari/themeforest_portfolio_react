@@ -1,7 +1,6 @@
 import React from 'react'
 import portFolio from '../assets/works/portfolio.json';
-import ModalPortfolio from './ModalPortfolio';
-
+import { Link } from "react-router-dom";
 
 function Portfolio() {
 
@@ -73,13 +72,7 @@ function Portfolio() {
           }
     }
 
-    // Modal
-	// Show a success pop up via <SuccesMail /> component
-	const showModal = () =>{
-        document.getElementById('portfolioModal').classList.remove("d-none");
-        document.getElementById('portfolioModal').classList.add("d-block");
-          }
-      return (
+  return (
     <>
     <section id="portfolio" className="bg-body-secondary pb-5">
     <h1 className="section-title pt-5">Our Portfolio</h1>
@@ -108,9 +101,9 @@ function Portfolio() {
                                 <p className="card-text">{e.fixedLengthExcerpt}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <button className="btn btn-outline-primary p-1" onClick={showModal}>
+                                        <Link className="btn btn-outline-primary p-1" state={{ clicked: e.title }} to={`/singlePost/?${e.title}`}>
                                             <i className="fs-6 fa fa-search"></i> See Project
-                                        </button>
+                                        </Link>
                                     </div>
                                     <small className="text-primary fs-6">{e.category}</small>
                                 </div>
@@ -119,8 +112,9 @@ function Portfolio() {
                     </div>
                     )})}
                 </div>
+
+
             </div>
-          <ModalPortfolio />
         </div>
     </section>
     </>

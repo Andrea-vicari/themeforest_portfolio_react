@@ -1,9 +1,28 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom';
 
 function SinglePost() {
+
+	let clicked = useLocation();
+
+  	let singleArt  = clicked.state
+
+	console.log(singleArt.clicked)
+
 	return (
 	<>
-	<article className="post single-post">
+		<header id="home" className="bg-primary py-5">
+
+			<div className="container">
+
+				<h1 className="page-title">{singleArt.clicked}</h1>
+
+				<p className="page-subtitle">Travelling the world on a train. A photo trip...</p>
+
+			</div>
+
+		</header>
+		<article className="post single-post">
 		<div className="container">
 			<div className="row">
 				<div className="col-sm-10 mx-auto">

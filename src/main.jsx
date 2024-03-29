@@ -12,6 +12,7 @@ import '../src/Components/styles/services-style.css'
 import '../src/Components/styles/news-style.css'
 import '../src/Components/styles/portfolio-style.css'
 import '../src/Components/styles/contact-style.css'
+import '../src/Components/styles/singlePost-style.css'
 
 // Main CSS
 import './assets/css/index.scss'

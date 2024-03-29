@@ -1,6 +1,6 @@
 import React from 'react'
 import portFolio from '../assets/works/portfolio.json';
-
+import { Link } from "react-router-dom";
 
 function Portfolio() {
 
@@ -101,9 +101,9 @@ function Portfolio() {
                                 <p className="card-text">{e.fixedLengthExcerpt}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <a className="btn btn-outline-primary p-1" href="#link">
+                                        <Link className="btn btn-outline-primary p-1" to={`/singlePost/`}>
                                             <i className="fs-6 fa fa-search"></i> See Project
-                                        </a>
+                                        </Link>
                                     </div>
                                     <small className="text-primary fs-6">{e.category}</small>
                                 </div>

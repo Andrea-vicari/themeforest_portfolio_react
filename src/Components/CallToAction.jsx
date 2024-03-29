@@ -1,9 +1,9 @@
 import React from 'react'
 import CtaImg from "../Components/images/react_port_cover_cropped.jpg"
-import { useSelector, useDispatch } from 'react-redux'
+
 
 function CallToAction() {
-  const count = useSelector((state) => state.counter.value)
+
   return (
     <React.Fragment>
         <section className="bg-primary light-typo padding-top-bottom call-to-action">

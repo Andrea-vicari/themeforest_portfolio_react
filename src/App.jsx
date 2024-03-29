@@ -1,34 +1,21 @@
 import React from 'react';
+import { Routes, Route} from 'react-router-dom';
 import Navbar from './Components/Common/Navbar';
-import Slider from './Components/Slider';
-import Services from './Components/Services';
-import CalltoAction from './Components/CallToAction';
-import CalltoActionSmall from './Components/CallToActionSmall';
-import About from './Components/About';
 import Footer from './Components/Common/Footer';
-import Prices from './Components/Prices';
-import Contact from './Components/Contact';
-import Portfolio from './Components/Portfolio';
-import News from './Components/News';
-
-
+import HomepageOne from './pages/HomepageOne';
+import SinglePost from './pages/SinglePost';
 function App() {
 
 
   return (
-    <>
-    <Navbar />
-    <Slider />
-    <About/>
-    <CalltoAction />
-    <Services />
-    <Portfolio />
-    <Prices />
-    <CalltoActionSmall />
-    <News />
-    <Contact />
-    <Footer />
-    </>
+    <React.Fragment>
+      <Navbar />
+        <Routes>
+            <Route path="/" element={<HomepageOne />} />
+            <Route path="/singlePost" element={<SinglePost />} />
+        </Routes>
+      <Footer />
+    </React.Fragment>
 
   )
 }

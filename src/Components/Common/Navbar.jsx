@@ -43,7 +43,7 @@ function Navbar() {
               <a className="nav-link fs-5" href="#pricing">Prices</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fs-5" href="#news">News</a>
+              <a className="nav-link fs-5" href="#features">Features</a>
             </li>
 
             <li className="nav-item">

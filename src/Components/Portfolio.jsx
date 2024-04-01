@@ -1,13 +1,20 @@
-import React from 'react'
-import portFolio from '../assets/works/portfolio.json';
-import ModalPortfolio from './ModalPortfolio';
+import React from 'react';
+import { useState } from 'react';
+import { useSelector} from 'react-redux'
+import market from '../assets/works/portfolio.json';
 
 
 function Portfolio() {
+    // Dark light logics
+    const themeType = useSelector((state) => state.counter.value)
+    let bgType, textType;
+    themeType == "ligth" ? bgType = "bg-body-secondary" : bgType = "bg-black"
+    themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
+    // End dark light logics
 
     // Declare a fixed length excerpt
     var fixedLengthExcerpt;
-    // Function to short down a long description and generate an excerpt
+    // Function shorter() to short down a long description and generate an excerpt
     // the length can be set by editing "arrayPh.length = x"
     const shorter = (phrase) =>{
       let arrayPh = phrase.split(' ');
@@ -15,16 +22,17 @@ function Portfolio() {
       fixedLengthExcerpt = arrayPh.join(' ');
       return fixedLengthExcerpt
     }
-    // Run shorter() and add an excerpt to each object of portfolio
-    for(let i=0;i<portFolio.length;i++){
-        shorter(portFolio[i].description)
-        portFolio[i].fixedLengthExcerpt = fixedLengthExcerpt
+
+    // Run shorter() and add an excerpt to each object of local portfolio json
+    for(let i=0;i<market.length;i++){
+        shorter(market[i].description)
+        market[i].fixedLengthExcerpt = fixedLengthExcerpt
     }
 
     // Empty array to get the categories
     const categoryArray = [];
     // Loop on portfolio and push the category into the array
-    portFolio.forEach(element => {
+    market.forEach(element => {
         categoryArray.push(element.category)
     });
     // Declare an array with the first elemnt "all"
@@ -48,11 +56,37 @@ function Portfolio() {
     // Run the eliminateDuplicates function on the array of categories
     eliminateDuplicates(categoryArray)
 
+
     // Function to filter the portfolio blocks
     function filterSelection(whatClicked){
 
+
         // array of all css props of portfolios block
         let allBlocks = document.getElementsByClassName('port_block')
+
+        // array of all css props of filters
+        let allFilters = document.getElementsByClassName('btnFilters')
+
+        // Loop through all filters
+        for(let i =0; i<allFilters.length;i++){
+
+            // Array of the css props of single filter block
+            let arrayOfPropsFilter = allFilters[i].classList.value.split(' ')
+            console.log(arrayOfPropsFilter)
+            // Function to test if element is equal to whatClicked
+            const isPresent = (element) => element == whatClicked;
+                // If .some() returns false set inactive
+                if(arrayOfPropsFilter.some(isPresent) == false){
+                    allFilters[i].classList.add('inactive')
+                    allFilters[i].classList.remove('active')
+                }
+                // Otherwise set active the block whose cat is equal to whatclicked
+                else{
+                    allFilters[i].classList.remove('inactive')
+                    allFilters[i].classList.add('active')
+                  }
+          }
+
 
         // Loop through all blocks
         for(let i =0; i<allBlocks.length;i++){
@@ -71,34 +105,46 @@ function Portfolio() {
                       allBlocks[i].classList.add('visible')
                   }
           }
+
     }
 
-    // Modal
-	// Show a success pop up via <SuccesMail /> component
-	const showModal = () =>{
-        document.getElementById('portfolioModal').classList.remove("d-none");
-        document.getElementById('portfolioModal').classList.add("d-block");
-          }
-      return (
+    // useState Hook to check what id from modals
+    const [isCLicked, setID] = useState([]);
+
+
+    // Function to show the modal
+    const openModal = (whatClicked)=>{
+        setID(whatClicked);
+       document.getElementById(whatClicked).classList.add('d-block');
+      }
+    // Function to hide the modal
+      const closeModal = (whatClicked)=>{
+        setID(whatClicked);
+        document.getElementById(whatClicked).classList.remove('d-block');
+      }
+
+
+    return (
     <>
-    <section id="portfolio" className="bg-body-secondary pb-5">
+    <section id="portfolio" className={"pb-5 " + bgType + " " + textType}>
     <h1 className="section-title pt-5">Our Portfolio</h1>
         <p className='mb-3 text-center'>We are proud of what we do. This is just an example of our greatest projects.</p>
 
         <div>
             <div className="container gray-bg">
+                {/******* PORTFOLIO FILTERS *********/}
                 <div className='container d-flex justify-content-center pt-1 mb-5'>
                     <div className="mx-auto">
                     {uniqueFilters.map((e)=>{
                     return(
-                        <button key={e} onClick={()=>filterSelection(e)} type="button" className="btn btn-outline-primary mx-2">{e}</button>
+                        <button id={e} key={e} onClick={()=>filterSelection(e)} type="button" className={"btn btn-outline-primary mx-2 btnFilters mb-2 " + e}>{e}</button>
                         )})}
                     </div>
                 </div>
-
+                {/******* END PORTFOLIO FILTERS *********/}
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                {portFolio.map((e)=>{
+                {market.map((e,i)=>{
                     return(
 
                     <div key={e.title} className={"col" + " " + e.category + " " + "port_block"}>
@@ -108,7 +154,7 @@ function Portfolio() {
                                 <p className="card-text">{e.fixedLengthExcerpt}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <button className="btn btn-outline-primary p-1" onClick={showModal}>
+                                        <button className="btn btn-outline-primary p-1" onClick={()=>openModal(i)}>
                                             <i className="fs-6 fa fa-search"></i> See Project
                                         </button>
                                     </div>
@@ -116,11 +162,38 @@ function Portfolio() {
                                 </div>
                             </div>
                         </div>
+                        {/************ MODAL STARTS HERE *********/}
+                        <div id={i} className="modal modal-sheet bg-dark px-4 py-md-5" tabIndex="-1" role="dialog">
+                                <div className="modal-dialog modal-xl bg-dark" role="document">
+                                    <div className="modal-content rounded-4 shadow bg-ligth" >
+                                        <div className="modal-header d-flex justify-content-center">
+
+                                        <h1 className="display-3 modal-title text-center">{e.title}</h1>
+
+                                        </div>
+                                        <div className="modal-body py-3 text-center">
+                                            <img src={e.thumbImage} className='img-fluid'></img>
+                                        <h5 className="mt-3 fw-bold">{e.description}</h5>
+                                        <a href={e.extLink} target='_blank' className='btn btn-lg btn-outline-dark mt-5'>See Live</a>
+                                        </div>
+
+                                        <div className="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+
+                                        <div className="modal-footer">
+                                            <button type="button" onClick={()=>closeModal(i)} className="btn btn-danger align-items-center" data-bs-dismiss="modal" aria-label="Close">
+                                            <i className='fa fa-times px-2 fs-4'></i>Close
+                                            </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        {/************ END MODAL ***********/}
                     </div>
                     )})}
                 </div>
             </div>
-          <ModalPortfolio />
+
         </div>
     </section>
     </>

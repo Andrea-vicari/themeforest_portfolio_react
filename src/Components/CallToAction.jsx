@@ -6,7 +6,7 @@ function CallToAction() {
 
   return (
     <React.Fragment>
-        <section className="bg-primary light-typo padding-top-bottom call-to-action">
+        <section className="bg-primary light-typo py-5 call-to-action">
 
         <div className="container">
 

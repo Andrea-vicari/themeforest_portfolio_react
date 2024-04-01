@@ -18,6 +18,7 @@ function About() {
 
             <div className="section-title">
               <h2>about</h2>
+              <p>We are a small team with great skills.</p>
             </div>
             <p className='text-center'>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             <div className="row pt-3">

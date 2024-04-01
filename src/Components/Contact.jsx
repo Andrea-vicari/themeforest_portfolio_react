@@ -1,10 +1,18 @@
 import React from 'react'
 import { useRef, useState} from 'react';
+import { useSelector} from 'react-redux';
 import emailjs from '@emailjs/browser';
 import SuccesMail from './SuccesMail';
 
 
 function Contact() {
+
+   // Dark light logics
+   const themeType = useSelector((state) => state.counter.value)
+   let bgType, textType;
+   themeType == "ligth" ? bgType = " bg-body-secondary" : bgType = "bg-dark"
+   themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
+   // End dark light logics
 
   // UseRef for EmailJS
   const form = useRef();
@@ -84,7 +92,7 @@ function Contact() {
 
   return (
     <React.Fragment>
-        <section id="contact" className="bg-body-secondary pt-5 pb-5">
+        <section id="contact" className={"pt-5 pb-5 " + bgType + " " + textType}>
 
 			<div className="container">
 
@@ -121,9 +129,9 @@ function Contact() {
 					<p className="subsection-description mb-0">Drop us a line and we will contact you as soon as possible.</p>
 				</div>
 
-				<div className="row pt-0">
+				<div className="row pt-0 pb-4">
 					{/* Contact form */}
-					<form ref={form} onSubmit={sendEmail} id="contact-form" className="col-sm-6 col-sm-offset-3 mx-auto">
+					<form ref={form} onSubmit={sendEmail} id="contact-form" className="col-sm-6 col-sm-offset-3 mx-auto pb-4">
 
 						<div className="form-group">
 						  <label className="control-label" htmlFor="contact-name">Name</label>

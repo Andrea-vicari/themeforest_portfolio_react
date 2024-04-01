@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# About component
+# Features component
 --------------------------------------------------------------*/
 /* Color SASS Variables */
 :root {
@@ -10,11 +10,11 @@
   --green_boot: #198754;
 }
 
-.about .icon-box {
+.features .icon-box {
     margin-bottom: 20px;
   }
 
-  .about .icon {
+  .features .icon {
     float: left;
     display: flex;
     align-items: center;
@@ -29,37 +29,37 @@
     border: 1px solid var(--blue_boot);
   }
 
-  .about .icon i {
+  .features .icon i {
     color: #fff;
     /*Change below to adapt font size of the icon */
     font-size: 34px;
     line-height: 0;
   }
 
-  .about .icon-box:hover .icon {
+  .features .icon-box:hover .icon {
     background: #fff;
   }
 
-  .about .icon-box:hover .icon i {
+  .features .icon-box:hover .icon i {
     color: var(--blue_boot);
   }
 
-  .about .title {
+  .features .title {
     margin-left: 80px;
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 23px;
   }
 
-  .about .title a {
+  .features .title a {
     color: #343a40;
   }
 
-  .about .title a:hover {
+  .features .title a:hover {
     color: var(--blue_boot);
   }
 
-  .about .description {
+  .features .description {
     margin-left: 80px;
     line-height: 24px;
     font-size: 18px;

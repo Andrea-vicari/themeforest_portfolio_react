@@ -9,13 +9,21 @@ body{
 	overflow-x:hidden;
 }
 
-/* Color SASS Variables */
-$blue_boot: #0d6efd;
-$red_boot: #dc3545;
-$ligth_blue_boot: #0dcaf0;
-$orange_boot: #ffc107;
-$green_boot: #198754;
 
+$primary:#340261;
+$secondary:#f50a0a;
+$font-family-sans-serif: 'Fira Code', monospace !default;
+
+// Importing functions and variables
+@import'../node_modules/bootstrap/scss/variables';
+@import'../node_modules/bootstrap/scss/functions';
+
+
+
+// Importing Bootstrap
+// The amalgamation of the Bootstrap raw .scss files
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+//@import '../node_modules/bootstrap/scss/bootstrap';
 
 h1,
 h2,

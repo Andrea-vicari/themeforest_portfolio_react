@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 
 function Navbar() {
-
+  // Dark theme logics
   const count = useSelector((state) => state.counter.value)
 
 

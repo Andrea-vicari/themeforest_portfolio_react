@@ -14,7 +14,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme={count}>
     <div className="container">
       <a className="navbar-brand" href='/'>
-        <img src={reactLogo}></img> React Portfolio
+        <img src={reactLogo}></img> R-Portfolio
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

@@ -3,13 +3,6 @@
 ---------------------*/
 
 /* Color SASS Variables */
-:root {
-    --blue_boot: #0d6efd;
-    --red_boot: #dc3545;
-    --ligth_blue_boot: #0dcaf0;
-    --orange_boot: #ffc107;
-    --green_boot: #198754;
-  }
 
 .timeline{
     position:relative;

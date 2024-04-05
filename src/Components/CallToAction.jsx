@@ -1,5 +1,5 @@
 import React from 'react'
-import CtaImg from "../Components/images/react_port_cover_cropped.jpg"
+import CtaImg from "../assets/images/react_port_cover_cropped.jpg"
 
 
 function CallToAction() {
@@ -18,9 +18,9 @@ function CallToAction() {
 
                 <div className="col-sm-5 col-sm-offset-1">
 
-                    <h1>Call to Action Section</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
-                    <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
+                    <h1 className='text-black'>Call to Action Section</h1>
+                    <p className='text-black'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
+                    <p className='text-black'>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
 
                     <a className="btn btn-outline-light" href="#services"><i className="fa fa-arrow-down"></i> Check our service</a>
 

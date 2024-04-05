@@ -1,14 +1,6 @@
 /*--------------------------------------------------------------
 # About component
 --------------------------------------------------------------*/
-/* Color SASS Variables */
-:root {
-  --blue_boot: #0d6efd;
-  --red_boot: #dc3545;
-  --ligth_blue_boot: #0dcaf0;
-  --orange_boot: #ffc107;
-  --green_boot: #198754;
-}
 
 #about{
   padding-top: 100px !important;
@@ -27,7 +19,7 @@
 }
 
 .about .image {
-  background: url("../images/profile-pic.jpg") center center no-repeat;
+  background: url("../../assets/images/profile-pic.jpg") center center no-repeat;
   background-size: cover;
   min-height: 350px;
   margin-bottom: 20px;
@@ -43,7 +35,7 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .about .content ul strong {
@@ -53,7 +45,6 @@
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: var(--blue_boot);
   line-height: 0;
 }
 
@@ -68,7 +59,6 @@
 .about .content .count-box i {
   display: block;
   font-size: 36px;
-  color:var(--blue_boot);
   float: left;
   line-height: 0;
 }

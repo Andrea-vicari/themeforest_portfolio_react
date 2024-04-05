@@ -13,7 +13,7 @@ function SwitchDark() {
 
     <div id='ligth_dark_button' className="dropdown">
           <button className="btn dropdown-toggle px-2 mt-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i className='fa fa-sun fs-4 text-primary'></i>
+            <i className='fa fa-toggle-on fs-4 text-primary'></i>
           </button>
           <ul className="dropdown-menu">
             <li><a className="dropdown-item" onClick={()=>dispatch(dark())}>Dark</a></li>

@@ -11,6 +11,7 @@ import Footer from './Components/Common/Footer';
 import Prices from './Components/Prices';
 import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
+import PortfolioOverlay from './Components/PortfolioOverlay';
 import News from './Components/News';
 import Features from './Components/Features';
 

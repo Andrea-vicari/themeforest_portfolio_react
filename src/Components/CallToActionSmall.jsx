@@ -8,8 +8,8 @@ function CallToActionSmall() {
 
             <div className="row d-flex align-items-center">
                 <div className="col-md-9">
-                    <h2 className='display-4 fw-bolder'>Call to Action</h2>
-                    <p>Call to action (CTA) is a marketing term for any device designed to prompt an immediate response or encourage an immediate sale.</p>
+                    <h2 className='display-4 fw-bolder text-black'>Call to Action</h2>
+                    <p className=' text-black-50 fs-4'>Call to action (CTA) is a marketing term for any device designed to prompt an immediate response or encourage an immediate sale.</p>
                 </div>
                 <div className="col-md-3 mt-3">
                     <p className="text-center">

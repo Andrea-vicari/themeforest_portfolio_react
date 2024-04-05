@@ -1,5 +1,5 @@
 import React from 'react'
-import reactLogo from "../images/react_colored.svg"
+import reactLogo from "../../assets/images/react_colored.svg"
 import DarkSelector from '../Common/SwitchDark'
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -13,8 +13,9 @@ function Navbar() {
     <>
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme={count}>
     <div className="container">
-      <a className="navbar-brand" href='/'>
-        <img src={reactLogo}></img> R-Portfolio
+      <a className="navbar-brand d-flex" href='#intro'>
+        <i className='fab fa-react fs-1 text-primary mx-2 align-items-center'></i>
+        R-Portfolio
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -28,10 +29,10 @@ function Navbar() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
             <li className="nav-item">
-              <a className="nav-link fs-5 active" aria-current="page" href='/'>Home</a>
+              <a className="nav-link fs-5" data-bs-spy="scroll" data-bs-target="#intro" aria-current="page" href='#intro'>Home</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link fs-5" href="#about">About</a>
+            <li className="nav-item" data-bs-spy="scroll" data-bs-target="#about" >
+              <a className="nav-link fs-5"href="#about">About</a>
             </li>
             <li className="nav-item">
               <a className="nav-link fs-5" href="#services">Services</a>

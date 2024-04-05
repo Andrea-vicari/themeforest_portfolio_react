@@ -12,15 +12,13 @@ import '../src/Components/styles/cta-small-style.css'
 import '../src/Components/styles/services-style.css'
 import '../src/Components/styles/news-style.css'
 import '../src/Components/styles/portfolio-style.css'
+import '../src/Components/styles/portfolio-overlay-style.css'
 import '../src/Components/styles/contact-style.css'
 import '../src/Components/styles/singlePost-style.css'
 import '../src/Components/styles/footer-style.css'
 
-// Main CSS
-import './assets/css/index.scss'
-
-// Bootstrap CSS
-import 'bootstrap/dist/css/bootstrap.min.css'
+// Main CSS Sass
+import './sass/index.scss';
 
 import store from './redux/store.jsx'
 import { Provider } from 'react-redux'

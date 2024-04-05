@@ -17,8 +17,9 @@ function AboutMe() {
     <section id="about" className={"about py-5 mt-5"+ " " + bgType + " " + textType}>
         <div className="container px-3">
 
-        <div className="section-title">
-              <h2>about</h2>
+        <div>
+              <h2 className="section-title">about</h2>
+              <p className='mb-5 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, animi, quasi cum nost</p>
         </div>
 
             <div className="row">
@@ -29,34 +30,36 @@ function AboutMe() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>Name:</strong> <span>Your Name
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>Name:</strong> <span>Your Name
                                             </span></li>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>Website:</strong>
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>Website:</strong>
                                         <span>www.example.com</span>
                                     </li>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>Phone:</strong> <span>+123 456
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>Phone:</strong> <span>+123 456
                                             7890</span></li>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>City:</strong> <span>San Diego,
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>City:</strong> <span>San Diego,
                                             USA</span></li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>Degree:</strong> <span>Master</span>
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>Age:</strong> <span>30</span></li>
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>Degree:</strong> <span>Master</span>
                                     </li>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>Email:</strong>
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>Email:</strong>
                                         <span>yourmail@example.com</span>
                                     </li>
-                                    <li><i className="fa fa-chevron-right"></i> <strong>Freelance:</strong>
+                                    <li><i className="fa fa-chevron-right text-primary"></i> <strong>Freelance:</strong>
                                         <span>Available</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+
                         <hr></hr>
-                        <div className="row mt-0">
-                            <div className="row g-2 row-cols-1 row-cols-lg-3">
+                        <div className="mt-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur odit, dolorem dicta commodi doloribus excepturi</p>
+                            <div className="row g-2 row-cols-1 row-cols-lg-3 mt-0">
                                 <div className="col d-flex align-items-start">
                                     <div className="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2">
                                     <i className='fab fa-node fs-1 text-body-emphasis bg-body-secondary mx-2'></i>

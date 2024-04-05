@@ -23,7 +23,7 @@ function Footer() {
                 <li><a href="#link"><i className="fab fa-linkedin fa-fw"></i></a></li>
             </ul>
             <hr></hr>
-            <p>&copy;2024 Proudly coded using React and ready to showcase your next projects</p>
+            <p className='text-black'>&copy;2024 Proudly coded using React and ready to showcase your next projects</p>
 
 
         </div>

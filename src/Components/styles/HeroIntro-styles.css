@@ -238,10 +238,10 @@
  */
  @-webkit-keyframes color-change-3x {
   0% {
-    background: #19dcea;
+    background: #222323;
   }
   50% {
-    background: #b22cff;
+    background: #3a393b;
   }
   100% {
     background: #ea2222;
@@ -249,10 +249,10 @@
 }
 @keyframes color-change-3x {
   0% {
-    background: #19dcea;
+    background: #222323;
   }
   50% {
-    background: #b22cff;
+    background: #3a393b;
   }
   100% {
     background: #ea2222;

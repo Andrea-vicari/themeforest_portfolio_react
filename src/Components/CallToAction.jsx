@@ -1,5 +1,5 @@
 import React from 'react'
-import CtaImg from "../assets/images/react_port_cover_cropped.jpg"
+import CtaImg from "../assets/images/omsel_screen1.jpg"
 
 
 function CallToAction() {

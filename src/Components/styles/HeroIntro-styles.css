@@ -74,6 +74,7 @@
 @media (max-width: 575px) {
   #hero h1 {
     font-size: 40px;
+    line-height:50px;
   }
 
   #hero h2 {

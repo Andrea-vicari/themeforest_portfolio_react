@@ -4,7 +4,7 @@ function HeroIntro() {
   return (
     <>
 <section id="hero">
-    <div className="hero-container color-change-3x" id='intro'>
+    <div className="hero-container color-change-2x" id='intro'>
       <h1 className='text-center tracking-in-expand'>Web developer</h1>
       <h2 className='text-center tracking-in-expand-slow'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In deserunt quibusdam</h2>
       <a href="#services" className="btn-scroll btn scrollto bounce-top" title="Scroll Down">

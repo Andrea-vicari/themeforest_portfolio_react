@@ -2,6 +2,8 @@ import React from 'react'
 import { useEffect } from 'react'
 
 function Footer() {
+
+  // Scroll to top function
   useEffect(() => {
     const element = document.getElementById('myBtn');
     element.style.display = "block";

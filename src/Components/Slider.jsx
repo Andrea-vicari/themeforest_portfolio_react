@@ -1,6 +1,6 @@
 
 import React from 'react'
-import slide1 from "../assets/images/space_bg.jpg"
+import slide1 from "../assets/images/slider_bg_1.jpg"
 import slide2 from "../assets/images/NetworkBackground.jpg"
 
 function Slider() {

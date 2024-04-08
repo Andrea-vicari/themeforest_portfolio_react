@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Navbar from './Components/Common/Navbar';
+import NavbarOffCanvas from './Components/Common/NavbarOffCanvas';
+import NavbarFixedTop from './Components/Common/NavbarFixedTop';
 import Slider from './Components/Slider';
 import HeroIntro from './Components/HeroIntro';
 import Services from './Components/Services';
@@ -8,6 +9,7 @@ import CalltoAction from './Components/CallToAction';
 import CalltoActionSmall from './Components/CallToActionSmall';
 import AboutMe from './Components/AboutMe';
 import Footer from './Components/Common/Footer';
+import FooterTwoColumns from './Components/Common/FooterTwoColumns';
 import Prices from './Components/Prices';
 import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
@@ -20,7 +22,7 @@ function App() {
 
   return (
     <>
-    <Navbar />
+    <NavbarFixedTop />
     <HeroIntro />
     <AboutMe/>
     <CalltoAction />
@@ -30,7 +32,7 @@ function App() {
     <CalltoActionSmall />
     <Features />
     <Contact />
-    <Footer />
+    <FooterTwoColumns />
     </>
 
   )}

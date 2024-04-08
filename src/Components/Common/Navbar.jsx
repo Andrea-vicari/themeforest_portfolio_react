@@ -1,6 +1,5 @@
 import React from 'react'
-import omselLogo from "../../assets/images/omsel_logo.png"
-import DarkSelector from "./SwitchDark"
+import DarkSelector from '../Common/SwitchDark'
 import { useSelector, useDispatch } from 'react-redux'
 
 
@@ -14,14 +13,14 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme={count}>
     <div className="container">
       <a className="navbar-brand d-flex" href='#intro'>
-        <img src={omselLogo} style={{width:150}}></img>
+
+        <span className='fs-3 text-decoration-underline'>OS<span className='text-primary'>L</span>EM</span>
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div className="offcanvas-header">
-        <img src={omselLogo} style={{width:200}} className='mx-auto'/>
 
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>

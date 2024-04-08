@@ -14,7 +14,7 @@ function Navbar() {
     <div className="container">
       <a className="navbar-brand d-flex" href='#intro'>
 
-        <span className='fs-1 text-decoration-underline'>OS<span className='text-primary'>L</span>EM</span>
+        <span className='fs-1 text-decoration-underline'>OM<span className='text-primary'>S</span>EL</span>
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

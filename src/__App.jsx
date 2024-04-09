@@ -8,7 +8,7 @@ import Services from './Components/Services';
 import CalltoAction from './Components/CallToAction';
 import CalltoActionSmall from './Components/CallToActionSmall';
 import AboutMe from './Components/AboutMe';
-import Footer from './Components/Common/Footer';
+// import Footer from './Components/Common/Footer';
 import FooterTwoColumns from './Components/Common/FooterTwoColumns';
 import Prices from './Components/Prices';
 import Contact from './Components/Contact';
@@ -25,12 +25,14 @@ function App() {
     <NavbarFixedTop />
     <HeroIntro />
     <AboutMe/>
-    <Features />
+    <CalltoAction />
+    <Services />
     <Portfolio />
+    <Prices />
     <CalltoActionSmall />
-    <News />
+    <Features />
     <Contact />
-    <Footer />
+    <FooterTwoColumns />
     </>
 
   )}
